@@ -42,17 +42,17 @@ const Navbar = () => {
     <button className="lg:hidden" onClick={buttonOnChangeBars}>
       <GiHamburgerMenu className={`text-2xl ${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white'} `} />
     </button>
-    <div className="right-navbar space-x-4 hidden lg:block">
-      <a href="asd" className="font-bold text-xl">
+    <div className="right-navbar space-x-6 hidden lg:block">
+      <a href="asd" className="font-bold text-xl  hover:text-white">
         Home
       </a>
-      <a href="asd" className="text-xl">
+      <a href="asd" className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl`}>
         Why Aro ?
       </a>
-      <a href="asd" className="text-xl">
+      <a href="asd" className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl`}>
         Our Product
       </a>
-      <a href="asd" className="text-xl">
+      <a href="asd" className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl`}>
         Talk With Us
       </a>
     </div>

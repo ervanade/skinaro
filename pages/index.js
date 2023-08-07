@@ -46,7 +46,7 @@ export default function Home() {
             <h1 className="text-[#8C9C7B] font-bold  text-xl sm:text-2xl">
               Benefits using Aro Tea
             </h1>
-            <p className="text-[#5C5858] font-normal text-sm sm:text-lg">
+            <p className="text-[#5C5858] font-normal text-sm sm:text-base">
               The traditional Kayu Aro Tea production process starts from the
               planting process without using any chemicals, preservatives or
               coloring agents. In addition, tea production workers are also
@@ -63,7 +63,7 @@ export default function Home() {
             <h1 className="text-[#8C9C7B] font-bold text-xl sm:text-2xl">
             The best Orthodox tea
             </h1>
-            <p className="text-[#5C5858] font-normal text-sm sm:text-lg">
+            <p className="text-[#5C5858] font-normal text-sm sm:text-base ">
               The traditional Kayu Aro Tea production process starts from the
               planting process without using any chemicals, preservatives or
               coloring agents. In addition, tea production workers are also
