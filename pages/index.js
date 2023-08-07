@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsCart } from "react-icons/bs";
 import Navbar from "../components/navbar/Navbar";
 
 export default function Home() {
@@ -26,9 +27,10 @@ export default function Home() {
             </p>
           </div>
           <div className="cta">
-            <a href="shop" className="px-10 py-5 bg-[#6B826F] rounded-full">
-              Shop Now
-            </a>
+            <button className="items-center justify-center py-5 px-8 bg-[#6B826F] rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#6B826F]">
+            <BsCart className="text-xl"/>
+              <span>Shop Now</span>
+            </button>
           </div>
         </div>
         <img
