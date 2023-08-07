@@ -18,7 +18,7 @@ export default function Home() {
     
     {/* Hero Seection */}
     <Hero />
-      <button className="items-center justify-center py-5 px-8 bg-[#94AF78] fixed bottom-6 right-10 z-50 rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#6B826F]">
+      <button className="items-center justify-center py-3 px-8 bg-[#94AF78] fixed bottom-6 right-10 z-50 rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#6B826F]">
             <BsFillChatDotsFill className="text-xl"/>
               <span>Talk With Us</span>
       </button>
@@ -27,10 +27,10 @@ export default function Home() {
 
  {/* Section Benefit */}
       <div className="points-skinaro w-full flex flex-wrap justify-center items-center my-8 lg:my-16 container mx-auto max-w-7xl">
-        <img src="/natural1.png" alt="" className="" />
-        <img src="/best1.png" alt="" className="" />
-        <img src="/suit.png" alt="" className="" />
-        <img src="/halal.png" alt="" className="" />
+        <img src="/natural1.png" alt="" className="w-2/6 sm:w-auto" />
+        <img src="/best1.png" alt="" className="w-2/6 sm:w-auto" />
+        <img src="/suit.png" alt="" className="w-2/6 sm:w-auto" />
+        <img src="/halal.png" alt="" className="w-2/6 sm:w-auto" />
       </div>
 
       {/* Section Benefit */}
@@ -38,15 +38,15 @@ export default function Home() {
       <div className="arotea w-full mb-16">
         <div className="container mx-auto max-w-7xl gap-10 px-6 md:px-10 lg:px-24 flex justify-center items-center flex-col md:flex-row ">
 
-        <div className="flex flex-col gap-6 w-full">
+        <div className="flex flex-col gap-3 sm:gap-6 w-full">
           <div className="image w-full md:h-[300px] lg:h-[400px]">
             <img src="/arotea.png" alt="" className="w-full h-full object-cover" />
           </div>
-          <div className="description flex flex-col gap-4">
-            <h1 className="text-[#8C9C7B] font-bold text-2xl">
+          <div className="description flex flex-col gap-2 sm:gap-4">
+            <h1 className="text-[#8C9C7B] font-bold  text-xl sm:text-2xl">
               Benefits using Aro Tea
             </h1>
-            <p className="text-[#5C5858] font-normal text-lg">
+            <p className="text-[#5C5858] font-normal text-sm sm:text-lg">
               The traditional Kayu Aro Tea production process starts from the
               planting process without using any chemicals, preservatives or
               coloring agents. In addition, tea production workers are also
@@ -55,15 +55,15 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-6 w-full">
+        <div className="flex flex-col gap-3 sm:gap-6 w-full">
           <div className="image w-full md:h-[300px] lg:h-[400px]">
             <img src="/orthodoxtea.png" alt="" className="w-full h-full object-cover" />
           </div>
-          <div className="description flex flex-col gap-4">
-            <h1 className="text-[#8C9C7B] font-bold text-2xl">
+          <div className="description flex flex-col gap-2 sm:gap-4">
+            <h1 className="text-[#8C9C7B] font-bold text-xl sm:text-2xl">
             The best Orthodox tea
             </h1>
-            <p className="text-[#5C5858] font-normal text-lg">
+            <p className="text-[#5C5858] font-normal text-sm sm:text-lg">
               The traditional Kayu Aro Tea production process starts from the
               planting process without using any chemicals, preservatives or
               coloring agents. In addition, tea production workers are also
