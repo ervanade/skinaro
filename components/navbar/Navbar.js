@@ -25,6 +25,12 @@ const Navbar = () => {
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", changeColor);
   }
+  const navbarMenu = [
+    {name: "Home", link: "/"},
+    {name: "Why Aro ?", link: "/"},
+    {name: "Our Product ?", link: "/"},
+    {name: "Talk With Us", link: "/"},
+  ]
   return (
     <div
     className={`${
@@ -43,33 +49,24 @@ const Navbar = () => {
       <GiHamburgerMenu className={`text-2xl ${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white'} `} />
     </button>
     <div className="right-navbar space-x-6 hidden lg:block">
-      <a href="asd" className="font-bold text-xl  hover:text-white">
-        Home
-      </a>
-      <a href="asd" className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl`}>
-        Why Aro ?
-      </a>
-      <a href="asd" className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl`}>
-        Our Product
-      </a>
-      <a href="asd" className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl`}>
-        Talk With Us
-      </a>
+        {navbarMenu.map(item => {
+            return(
+            <a href={item.link} className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl ${item.name === 'Home' ? 'font-bold' : ''} ${item.name === 'Home' && !color ? '!text-white' : ''}`}>
+            {item.name}
+          </a>
+            )
+        })}
+    
     </div>
-    <div className={`right-navbar space-y-4 flex flex-col fixed top-0 ${menuButton ? 'right-0' : '-right-[350px]'} right-0 lg:hidden w-[350px] py-16 px-14 bg-[#AFBAB0] text-white h-full duration-200 transition-all ease-in`}>
-        <button className='absolute top-3 left-4' onClick={buttonOnChangeClose}><GiHamburgerMenu className='text-3xl text-gray-200 hover:text-white ' /></button>
-      <a href="asd" className="font-bold text-xl">
-        Home
-      </a>
-      <a href="asd" className="text-xl">
-        Why Aro ?
-      </a>
-      <a href="asd" className="text-xl">
-        Our Product
-      </a>
-      <a href="asd" className="text-xl">
-        Talk With Us
-      </a>
+    <div className={`right-navbar space-y-4 flex flex-col fixed top-0 ${menuButton ? 'right-0' : '-right-[350px]'} right-0 lg:hidden w-[350px] py-16 px-14 bg-[#9faca0] text-white h-full duration-200 transition-all ease-in`}>
+        <button className='absolute top-5 right-6' onClick={buttonOnChangeClose}><GiHamburgerMenu className='text-3xl text-gray-200 hover:text-white ' /></button>
+        {navbarMenu.map(item => {
+            return(
+            <a href={item.link} className={`text-xl text-gray-200 hover:text-white font-medium `}>
+            {item.name}
+          </a>
+            )
+        })}
     </div>
     </div>
   </div>

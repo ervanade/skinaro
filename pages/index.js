@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
     <Head>
-    <link rel="icon" href="/skinaro_white_green.png" />
+    <link rel="icon" href="/favicon-skinaro.png" />
     </Head>
     <Navbar />
     

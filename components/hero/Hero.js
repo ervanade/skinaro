@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div className="hero relative w-screen h-screen overflow-hidden">
       <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-20 z-1"></div>
-      <div className="text absolute top-36 left-10 lg:left-40 max-w-xs sm:max-w-sm lg:max-w-lg flex flex-col space-y-10">
+      <div className="text absolute top-36 sm:left-16 left-10  lg:left-40 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col space-y-10">
         <div className="text flex flex-col space-y-8">
           <h1 className="text-4xl tracking-[4px] leading-[40px] lg:text-5xl font-bold lg:tracking-[12px] lg:leading-[60px]">
             SKINARO TEA BRIGHTENING CLEANSER
