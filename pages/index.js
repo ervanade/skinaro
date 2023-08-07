@@ -39,14 +39,14 @@ export default function Home() {
       </div>
 
   {/* Section Product */}
-  <div className="product w-full">
+  {/* <div className="product w-full">
         <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-gray-700 flex">
         <div className="image w-full md:h-[300px] lg:h-[400px]">
-            <img src="/arotea.png" alt="" className="w-full h-full object-cover" />
+            <img src="/prod-1.png" alt="" className="w-full h-full object-cover" />
           </div>
         </div>
 
-      </div>
+      </div> */}
       {/* Section Benefit */}
 
       <div className="arotea w-full mb-16">
