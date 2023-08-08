@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  padding: 5rem;
+  scroll-padding: 5rem;
 }
 
 body {

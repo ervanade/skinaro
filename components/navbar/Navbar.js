@@ -50,7 +50,7 @@ const Navbar = () => {
         <div className="right-navbar space-x-6 hidden lg:block">
           {navbarMenu.map(item => {
             return (
-              <a key={item.id} href={item.link} className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl ${item.name === 'Home' ? 'font-bold' : ''} ${item.name === 'Home' && !color ? '!text-white' : ''}`}>
+              <a key={item.id} href={item.link} className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl ${item.name === 'Home' ? 'font-normal' : ''} ${item.name === 'Home' && !color ? '!text-white' : ''}`}>
                 {item.name}
               </a>
             )
