@@ -3,7 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html {
+  scroll-behavior: smooth;
+  padding: 5rem;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
