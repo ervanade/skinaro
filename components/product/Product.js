@@ -37,7 +37,7 @@ const Product = () => {
                     <div className="img-thumbnail flex gap-4 justify-center w-full">
                         {productData.map((item, index) => {
                             return (
-                                <div key={index} onClick={() => setSlider(index)} className={`img-box h-16 w-16 border flex justify-center items-center cursor-pointer p-3 border-gray-300 rounded ${slider === index ? '' : 'opacity-70'}`}>
+                                <div key={index} onClick={() => setSlider(index)} className={`img-box h-16 w-16 border flex justify-center items-center cursor-pointer p-3 border-gray-300 rounded ${slider === index ? '' : 'opacity-60'}`}>
                                     <img src={item.image} alt="" className="md:w-full h-full md:h-auto object-cover" />
                                 </div>
                             )
