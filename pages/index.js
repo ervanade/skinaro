@@ -9,6 +9,7 @@ import Hero from "../components/hero/Hero";
 import About from "../components/about/About";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
+import Product from "../components/product/Product";
 
 export default function Home() {
 
@@ -38,21 +39,7 @@ export default function Home() {
         <img src="/halal.png" alt="" className="w-2/6 sm:w-auto" />
       </div>
 
-      {/* Section Product */}
-      <div className="product w-full" id="product">
-        <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-gray-700 flex">
-          <div className="image w-full p-20">
-            <img src="/prod-1.png" alt="" className="w-full h-full object-cover" />
-          </div>
-          <div className="image w-full p-20">
-            <img src="/product-2.png" alt="" className="w-full h-full object-cover" />
-          </div>
-          <div className="image w-full p-20">
-            <img src="/product-3.png" alt="" className="w-full h-full object-cover" />
-          </div>
-        </div>
-
-      </div>
+      <Product />
 
       {/* Section Benefit */}
 
