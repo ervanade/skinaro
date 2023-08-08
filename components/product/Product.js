@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
-import { BsCart } from 'react-icons/bs'
+import { BsCart, BsChevronBarLeft, BsChevronLeft, BsChevronRight } from 'react-icons/bs'
 
 const Product = () => {
     const productData = [
@@ -14,9 +14,22 @@ const Product = () => {
     //     const interval = setInterval(() => setSlider((prev) => (prev === (productData.length - 1) ? 0 : prev + 1)), 3000)
     //     return () => clearInterval(interval)
     // }, [])
+    const prevOnClick = () => {
+        setSlider((prev) => prev === 0 ? productData.length - 1 : prev - 1)
+    }
+    const nextOnClick = () => {
+        setSlider((prev) => prev === productData.length - 1 ? 0 : prev + 1)
+    }
     return (
         <div className="product w-full my-20 flex justify-center items-center" id="product">
-            <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-gray-700 flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0">
+            <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-gray-700 flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0 group relative">
+                <div onClick={prevOnClick} className="prev-arrow hidden group-hover:block absolute top:1/3 md:top-1/2 left-6 md:left-10 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                    <BsChevronLeft size={30} className='font-bold' />
+                </div>
+                <div onClick={nextOnClick} className="prev-arrow hidden group-hover:block absolute top:1/3 md:top-1/2 right-6 md:right-10 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                    <BsChevronRight size={30} className='font-bold' />
+                </div>
+                <div className="next-arrow"></div>
                 <div className="image w-full flex flex-col">
                     <div className="image h-[350px] md:h-[450px] md:w-1/2 flex justify-center items-center self-center p-12 md:p-16" >
                         <img src={productData[slider].image} alt="" className="md:w-full h-full md:h-auto object-cover" />
