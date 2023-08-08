@@ -21,7 +21,7 @@ const Product = () => {
         setSlider((prev) => prev === productData.length - 1 ? 0 : prev + 1)
     }
     return (
-        <div className="product w-full my-16 flex justify-center items-center" id="product">
+        <div className="product w-full py-20 flex justify-center items-center" id="product">
             <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-gray-700 flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0 group relative">
                 <div onClick={prevOnClick} className="prev-arrow z-10 hidden group-hover:block absolute top:1/3 md:top-1/2 left-6 md:left-10 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer duration-500">
                     <BsChevronLeft size={30} className='font-bold' />
