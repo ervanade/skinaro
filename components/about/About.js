@@ -2,7 +2,7 @@ import React from 'react'
 
 const About = () => {
   return (
-    <div className="about grid lg:grid-cols-2 gap-4 px-6 md:px-10 lg:px-10">
+    <div className="about grid lg:grid-cols-2 gap-4 px-6 md:px-10 lg:px-10" id='why-aro'>
       <div className="left-about w-full object-cover">
         <img src="/image 5.png" alt="" className="w-full h-full object-cover" />
       </div>

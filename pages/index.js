@@ -39,7 +39,7 @@ export default function Home() {
       </div>
 
       {/* Section Product */}
-      <div className="product w-full">
+      <div className="product w-full" id="product">
         <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-gray-700 flex">
           <div className="image w-full p-20">
             <img src="/prod-1.png" alt="" className="w-full h-full object-cover" />

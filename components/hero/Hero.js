@@ -11,13 +11,13 @@ const Hero = () => {
   const [slider, setSlider] = useState(0)
 
   useEffect(() => {
-    const interval = setInterval(() => setSlider((prev) => (prev === (sliderItem.length - 1) ? 0 : prev + 1)), 2000)
+    const interval = setInterval(() => setSlider((prev) => (prev === (sliderItem.length - 1) ? 0 : prev + 1)), 3000)
     return () => clearInterval(interval)
   }, [])
 
 
   return (
-    <div className="hero relative w-screen h-screen overflow-hidden">
+    <div className="hero relative w-screen h-screen overflow-hidden" id="hero">
       <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-20 z-[2]"></div>
       <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 py-4 w-full h-full relative bg-transparent z-10" >
         <div className="text absolute top-36 sm:left-16 left-10 lg:left-40  left-50 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col space-y-10">
@@ -37,13 +37,24 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <div className="hero-image w-full h-full absolute top-0 left-0 duration-500 transition-all bg-cover" style={{ backgroundImage: `url(${sliderItem[slider].image})` }}>
 
-      <img
+      </div>
+      {/* <img
         src={sliderItem[slider]?.image}
         className="h-full lg:w-full object-cover absolute top-0 left-0 transition-all ease-in "
         alt="Hero Banner"
-      />
+      /> */}
+      <div className="controller absolute bottom-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex gap-2">
 
+        {
+          sliderItem.map((item, index) => {
+            return (
+              <div key={item.id} className={`h-3 w-3 rounded-full cursor-pointer ${slider === index ? 'bg-[#6B826F]' : 'bg-[#a0a7a1]'}`} onClick={() => setSlider(index)}></div>
+            )
+          })
+        }
+      </div>
     </div>
   );
 };

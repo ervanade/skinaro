@@ -26,10 +26,10 @@ const Navbar = () => {
     window.addEventListener("scroll", changeColor);
   }
   const navbarMenu = [
-    { id: 1, name: "Home", link: "/" },
-    { id: 2, name: "Why Aro ?", link: "/" },
-    { id: 3, name: "Our Product ?", link: "/" },
-    { id: 4, name: "Talk With Us", link: "/" },
+    { id: 1, name: "Home", link: "#hero" },
+    { id: 2, name: "Why Aro ?", link: "#why-aro" },
+    { id: 3, name: "Our Product", link: "#product" },
+    { id: 4, name: "Talk With Us", link: "#contact" },
   ]
   return (
     <div
