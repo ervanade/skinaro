@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BsCart } from "react-icons/bs";
 
 
 const Hero = () => {
+  const sliderItem = [
+    { id: 1, image: '/hero-skinaro.png' },
+    { id: 2, image: '/bg-1-skinaro.jpg' },
+    { id: 3, image: '/bg-2-skinaro.png' },
+  ]
+  const [slider, setSlider] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => setSlider((prev) => (prev === (sliderItem.length - 1) ? 0 : prev + 1)), 2000)
+    return () => clearInterval(interval)
+  }, [])
+
+
   return (
     <div className="hero relative w-screen h-screen overflow-hidden">
       <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-20 z-[2]"></div>
@@ -26,8 +39,8 @@ const Hero = () => {
       </div>
 
       <img
-        src="/hero-skinaro.png"
-        className="h-full lg:w-full object-cover absolute top-0 left-0"
+        src={sliderItem[slider]?.image}
+        className="h-full lg:w-full object-cover absolute top-0 left-0 transition-all ease-in "
         alt="Hero Banner"
       />
 
