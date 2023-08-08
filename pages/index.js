@@ -17,6 +17,7 @@ export default function Home() {
     <>
       <Head>
         <link rel="icon" href="/favicon-skinaro.png" />
+        <title>Skinaro - Beauty Aro Tea Skin Care</title>
       </Head>
       <Navbar />
 
