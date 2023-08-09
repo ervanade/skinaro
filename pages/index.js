@@ -34,6 +34,7 @@ export default function Home() {
 
       {/* Section Benefit */}
       <div className="points-skinaro w-full flex flex-wrap justify-center items-center my-8 lg:my-16 container mx-auto max-w-7xl">
+      
         <img src="/natural1.png" alt="" className="w-2/6 sm:w-auto" />
         <img src="/best1.png" alt="" className="w-2/6 sm:w-auto" />
         <img src="/suit.png" alt="" className="w-2/6 sm:w-auto" />
