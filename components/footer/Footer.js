@@ -7,16 +7,16 @@ const Footer = () => {
         <div className="logo"><img src="/skinaro_white.png" alt="Logo Skinaro White" /></div>
 
         <div className="nav-menu flex flex-col gap-4">
-          <a href="asd" className="text-base text-gray-200 hover:text-white">
+          <a href="#hero" className="text-base text-gray-200 hover:text-white">
             Home
           </a>
-          <a href="asd" className="text-base text-gray-200 hover:text-white">
+          <a href="#why-aro" className="text-base text-gray-200 hover:text-white">
             Why Aro ?
           </a>
-          <a href="asd" className="text-base text-gray-200 hover:text-white">
+          <a href="#product" className="text-base text-gray-200 hover:text-white">
             Our Product
           </a>
-          <a href="asd" className="text-base text-gray-200 hover:text-white">
+          <a href="#contact" className="text-base text-gray-200 hover:text-white">
             Talk With Us
           </a>
         </div>
