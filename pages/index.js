@@ -46,14 +46,14 @@ export default function Home() {
       {/* Section Benefit */}
 
       <div className="arotea w-full mb-16">
-        <div className="container mx-auto max-w-7xl gap-10 px-6 md:px-10 lg:px-24 flex justify-center items-center flex-col md:flex-row ">
+        <div className="container mx-auto max-w-7xl gap-10 px-6 md:px-10 lg:px-24 flex justify-center flex-col md:flex-row ">
 
           <div className="flex flex-col gap-3 sm:gap-6 w-full">
             <div className="image w-full md:h-[300px] lg:h-[400px]">
               <img src="/arotea.png" alt="" className="w-full h-full object-cover" />
             </div>
             <div className="description flex flex-col gap-2 sm:gap-4">
-              <h1 className="text-[#8C9C7B] font-bold  text-xl sm:text-2xl">
+              <h1 className="text-[#8C9C7B] font-semibold  text-xl sm:text-2xl">
                 Benefits using Aro Tea
               </h1>
               <p className="text-[#5C5858] font-normal text-sm sm:text-base">
@@ -70,15 +70,11 @@ export default function Home() {
               <img src="/orthodoxtea.png" alt="" className="w-full h-full object-cover" />
             </div>
             <div className="description flex flex-col gap-2 sm:gap-4">
-              <h1 className="text-[#8C9C7B] font-bold text-xl sm:text-2xl">
+              <h1 className="text-[#8C9C7B] font-semibold text-xl sm:text-2xl">
                 The best Orthodox tea
               </h1>
               <p className="text-[#5C5858] font-normal text-sm sm:text-base ">
-                The traditional Kayu Aro Tea production process starts from the
-                planting process without using any chemicals, preservatives or
-                coloring agents. In addition, tea production workers are also
-                prohibited from using cosmetics while processing tea so that the
-                quality of tea remains natural and good.
+              Tea has antioxidants that help remove toxins from your body, and start the healing process. In addition, tea contains significantly less caffeine than coffee, another of the world's most popular beverages.
               </p>
             </div>
           </div>
