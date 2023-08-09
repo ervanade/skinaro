@@ -25,10 +25,10 @@ const Product = () => {
         <div className="product w-full mt-8 mb-10 md:my-16 flex justify-center items-center" id="product">
             <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-gray-700 flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0 group relative">
                 <div onClick={prevOnClick} className="prev-arrow z-10 hidden group-hover:block absolute top:1/3 md:top-1/2 left-6 md:left-10 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer duration-500">
-                    <BsChevronLeft size={32} className='font-bold text-[#6B826F]' />
+                    <BsChevronLeft size={30} className='font-bold text-[#6B826F]' />
                 </div>
-                <div onClick={nextOnClick} className="prev-arrow z-10 hidden group-hover:block absolute top:1/3 md:top-1/2 right-6 md:right-10 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer">
-                    <BsChevronRight size={32} className='font-bold text-[#6B826F]' />
+                <div onClick={nextOnClick} className="next-arrow z-10 hidden group-hover:block absolute top:1/3 md:top-1/2 right-0 md:right-0 lg:right-3 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                    <BsChevronRight size={30} className='font-bold text-[#6B826F]' />
                 </div>
                 <div className="next-arrow"></div>
                 <div className="image w-full flex flex-col gap-4">
