@@ -17,7 +17,7 @@ const Contact = () => {
               <div className="name flex flex-col gap-5"><textarea id="message" rows="4" className="px-4 py-3 text-gray-800 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-green-800 focus:border-greenring-green-800 block w-full p-2.5 focus:outline-none" placeholder="Type Your Message" /></div>
             </div>
             <div className="justify-center items-center w-full flex">
-              <a href="send" className="px-16 py-3 bg-[#6B826F] rounded-full lg:mt-6 hover:bg-white hover:text-[#6B826F]">
+              <a href="send" className="px-16 py-3 bg-[#6B826F] rounded-full lg:mt-6 hover:bg-white hover:text-[#6B826F] transition-all duration-200">
                 Send
               </a>
             </div>

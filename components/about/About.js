@@ -26,7 +26,7 @@ const About = () => {
           </p>
 
           <div>
-            <a href="shop" className="px-8 py-3 bg-[#6B826F] rounded-full hover:bg-white hover:text-[#6B826F] hover:border hover:border-[#6B826F]">
+            <a href="shop" className="px-8 py-3 transition-all duration-200 bg-[#6B826F] rounded-full hover:bg-white hover:text-[#6B826F] border hover:border-[#6B826F]">
               Shop Now
             </a>
           </div>

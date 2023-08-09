@@ -31,7 +31,7 @@ const Hero = () => {
             </p>
           </div>
           <div className="cta">
-            <button className="items-center justify-center py-5 px-8 bg-[#6B826F] rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#6B826F]">
+            <button className="items-center justify-center py-5 px-8 bg-[#6B826F] rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#6B826F] transition-all duration-200">
               <BsCart className="text-xl" /> <span>Shop Now</span>
             </button>
           </div>
@@ -50,7 +50,7 @@ const Hero = () => {
         {
           sliderItem.map((item, index) => {
             return (
-              <div key={item.id} className={`h-3 w-3 rounded-full cursor-pointer ${slider === index ? 'bg-[#6B826F]' : 'bg-[#a0a7a1]'}`} onClick={() => setSlider(index)}></div>
+              <div key={item.id} className={`h-3 w-3 rounded-full cursor-pointer ${slider === index ? 'bg-[#6B826F]' : 'bg-[#d3d8d3]'}`} onClick={() => setSlider(index)}></div>
             )
           })
         }

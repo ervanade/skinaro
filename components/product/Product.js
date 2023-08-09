@@ -4,7 +4,8 @@ import { BsCart, BsChevronBarLeft, BsChevronLeft, BsChevronRight } from 'react-i
 
 const Product = () => {
     const productData = [
-        { id: 1, image: '/prod-1.png', name: 'SKINARO TEA BRIGHTENING CLEANSER', category: 'BRIGHTENING CLEANSER', description: 'Sabun cuci wajah dengan kandungan Ekstrak Teh & Glycolic Acid bantu mencerahkan dan membersihkan kulit mati sekaligus menenangkan kulit', ingridients: 'Allantoin, Sodium Hyaluronate, Polyquaternium-7, Vitamin E, Grape Seed Oil, Eucalyptus Oil, Rose Extract, Camellia Sinensis Leaf Extract, Sweet Almond Oil, Glycolic Acid' },
+        { id: 1, image: '/prod-4.png', name: 'SKINARO TEA BRIGHTENING CLEANSER', category: 'BRIGHTENING CLEANSER', description: 'Sabun cuci wajah dengan kandungan Ekstrak Teh & Glycolic Acid bantu mencerahkan dan membersihkan kulit mati sekaligus menenangkan kulit', ingridients: 'Allantoin, Sodium Hyaluronate, Polyquaternium-7, Vitamin E, Grape Seed Oil, Eucalyptus Oil, Rose Extract, Camellia Sinensis Leaf Extract, Sweet Almond Oil, Glycolic Acid' },
+        { id: 4, image: '/prod-1.png', name: 'SKINARO TEA BRIGHTENING SERUM', category: 'BRIGHTENING CLEANSER', description: 'Sabun cuci wajah dengan kandungan Ekstrak Teh & Glycolic Acid bantu mencerahkan dan membersihkan kulit mati sekaligus menenangkan kulit', ingridients: 'Allantoin, Sodium Hyaluronate, Polyquaternium-7, Vitamin E, Grape Seed Oil, Eucalyptus Oil, Rose Extract, Camellia Sinensis Leaf Extract, Sweet Almond Oil, Glycolic Acid' },
         { id: 2, image: '/product-2.png', name: 'SKINARO TEA BRIGHTENING ESSENCE TONER', category: 'BRIGHTENING CLEANSER', description: 'Sabun cuci wajah dengan kandungan Ekstrak Teh & Glycolic Acid bantu mencerahkan dan membersihkan kulit mati sekaligus menenangkan kulit', ingridients: 'Allantoin, Sodium Hyaluronate, Polyquaternium-7, Vitamin E, Grape Seed Oil, Eucalyptus Oil, Rose Extract, Camellia Sinensis Leaf Extract, Sweet Almond Oil, Glycolic Acid' },
         { id: 3, image: '/product-3.png', name: 'SKINARO TEA BRIGHTENING SERUM', category: 'BRIGHTENING CLEANSER', description: 'Sabun cuci wajah dengan kandungan Ekstrak Teh & Glycolic Acid bantu mencerahkan dan membersihkan kulit mati sekaligus menenangkan kulit', ingridients: 'Allantoin, Sodium Hyaluronate, Polyquaternium-7, Vitamin E, Grape Seed Oil, Eucalyptus Oil, Rose Extract, Camellia Sinensis Leaf Extract, Sweet Almond Oil, Glycolic Acid' },
     ]
@@ -21,13 +22,13 @@ const Product = () => {
         setSlider((prev) => prev === productData.length - 1 ? 0 : prev + 1)
     }
     return (
-        <div className="product w-full my-16 flex justify-center items-center" id="product">
+        <div className="product w-full mt-8 mb-10 md:my-16 flex justify-center items-center" id="product">
             <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-gray-700 flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0 group relative">
                 <div onClick={prevOnClick} className="prev-arrow z-10 hidden group-hover:block absolute top:1/3 md:top-1/2 left-6 md:left-10 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer duration-500">
-                    <BsChevronLeft size={30} className='font-bold' />
+                    <BsChevronLeft size={32} className='font-bold text-[#6B826F]' />
                 </div>
                 <div onClick={nextOnClick} className="prev-arrow z-10 hidden group-hover:block absolute top:1/3 md:top-1/2 right-6 md:right-10 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer">
-                    <BsChevronRight size={30} className='font-bold' />
+                    <BsChevronRight size={32} className='font-bold text-[#6B826F]' />
                 </div>
                 <div className="next-arrow"></div>
                 <div className="image w-full flex flex-col gap-4">
@@ -62,7 +63,7 @@ const Product = () => {
                         <p className='text-sm'>{productData[slider].ingridients}</p>
                     </div>
                     <div className='flex place-items-end self-end my-5'>
-                        <button className="items-center justify-center py-3 px-8 text-white bg-[#6B826F] rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#6B826F] border hover:border-[#6B826F]">
+                        <button className="items-center justify-center py-3 px-8 text-white bg-[#6B826F] rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#6B826F] border hover:border-[#6B826F] transition-all duration-200">
                             <BsCart className="text-xl" /> <span>Shop Now</span>
                         </button>
                     </div>
