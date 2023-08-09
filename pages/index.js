@@ -73,9 +73,9 @@ export default function Home() {
               <h1 className="text-[#8C9C7B] font-semibold text-xl sm:text-2xl">
                 The best Orthodox tea
               </h1>
-              <p className="text-[#5C5858] font-normal text-sm sm:text-base ">
-              Tea has antioxidants that help remove toxins from your body, and start the healing process. In addition, tea contains significantly less caffeine than coffee, another of the world's most popular beverages.
-              </p>
+              <p className="text-[#5C5858] font-normal text-sm sm:text-base">
+                Tea has antioxidants that help remove toxins from your body, and start the healing process. In addition, tea contains significantly less caffeine than coffee, another of the worlds most popular beverages.
+                </p>
             </div>
           </div>
         </div>
