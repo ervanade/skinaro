@@ -122,13 +122,13 @@ const Product = () => {
       <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-gray-700 flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0 group relative">
         <div
           onClick={prevOnClick}
-          className="prev-arrow z-10 hidden group-hover:block absolute top-[200px] sm:top-[200px] md:top-1/2 left-6 md:left-10 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer duration-500"
+          className="prev-arrow z-10 hidden group-hover:block absolute top-[200px] sm:top-[200px] md:top-[200px] left-6 md:left-10 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer duration-500"
         >
           <BsChevronLeft size={30} className="font-bold text-[#6B826F]" />
         </div>
         <div
           onClick={nextOnClick}
-          className="next-arrow z-10 hidden group-hover:block absolute top-[200px] sm:top-[200px] md:top-1/2 right-0 md:right-0 lg:right-3 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer"
+          className="next-arrow z-10 hidden group-hover:block absolute top-[200px] sm:top-[200px] md:top-[200px] right-0 md:right-0 lg:right-3 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer"
         >
           <BsChevronRight size={30} className="font-bold text-[#6B826F]" />
         </div>
