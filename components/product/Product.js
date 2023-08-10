@@ -33,29 +33,29 @@ const Product = () => {
     },
     {
       id: 4,
-      image: "/prod-1.png",
+      image: "/serum.jpeg",
       name: "Skinaro Tea Brightening Serum",
       category: "BRIGHTENING CLEANSER",
       description:
         "Merupakan toner essence dengan tekstur sangat ringan berfungsi untuk menyeimbangkan pH kulit wajah sekaligus mengembalikan kelembapan kulit. mengandung Ekstrak Teh & Niacinamide 2% yang dapat membantu meningkatkan kecerahan dan menjaga barrier kulit wajah.",
-        ingridients: [
-            {
-              title: "Camellia Sinensis Leaf Extract",
-              dexc: "Merupakan kandungan dengan tinggi antioksidan dapat bantu melindungi kerusakan sel akibat radikal bebas. Sehingga dapat mencegah inflamasi, hingga merawat kesehatan kulit.",
-            },
-            {
-              title: "Niacinamide 4%",
-              dexc: "Kandungan yang dapat membantu mengatasi permasalahan wajah yang kusam dengan membantu mencerahkan kulit, sehingga wajah terlihat lebih sehat tanpa memberikan efek samping. Serta dapat membantu mengatasi permasalahan kulit yang berjerawat.",
-            },
-            {
-              title: "Peptide",
-              dexc: "sejenis peptide yang merupakan asam amino, yang berfungsi mendorong proses pembuatan protein, seperti kolagen dan elastin. Yang membantu mengatasi permasalahan kerutan dan kurangnya elastisitas pada wajah",
-            },
-          ],
+      ingridients: [
+        {
+          title: "Camellia Sinensis Leaf Extract",
+          dexc: "Merupakan kandungan dengan tinggi antioksidan dapat bantu melindungi kerusakan sel akibat radikal bebas. Sehingga dapat mencegah inflamasi, hingga merawat kesehatan kulit.",
+        },
+        {
+          title: "Niacinamide 4%",
+          dexc: "Kandungan yang dapat membantu mengatasi permasalahan wajah yang kusam dengan membantu mencerahkan kulit, sehingga wajah terlihat lebih sehat tanpa memberikan efek samping. Serta dapat membantu mengatasi permasalahan kulit yang berjerawat.",
+        },
+        {
+          title: "Peptide",
+          dexc: "sejenis peptide yang merupakan asam amino, yang berfungsi mendorong proses pembuatan protein, seperti kolagen dan elastin. Yang membantu mengatasi permasalahan kerutan dan kurangnya elastisitas pada wajah",
+        },
+      ],
     },
     {
       id: 2,
-      image: "/product-2.png",
+      image: "/toner.jpeg",
       name: "Skinaro Tea Brightening Essence Toner",
       category: "BRIGHTENING CLEANSER",
       description:
@@ -66,9 +66,9 @@ const Product = () => {
           dexc: "Merupakan kandungan dengan tinggi antioksidan dapat bantu melindungi kerusakan sel akibat radikal bebas. Sehingga dapat mencegah inflamasi, hingga merawat kesehatan kulit.",
         },
         {
-            title: "Niacinamide 2%",
-            dexc: "Kandungan yang dapat membantu mengatasi permasalahan wajah yang kusam dengan membantu mencerahkan kulit, sehingga wajah terlihat lebih sehat tanpa memberikan efek samping. Serta dapat membantu mengatasi permasalahan kulit yang berjerawat.",
-          },
+          title: "Niacinamide 2%",
+          dexc: "Kandungan yang dapat membantu mengatasi permasalahan wajah yang kusam dengan membantu mencerahkan kulit, sehingga wajah terlihat lebih sehat tanpa memberikan efek samping. Serta dapat membantu mengatasi permasalahan kulit yang berjerawat.",
+        },
         {
           title: "Ceramide",
           dexc: "Bantu mencegah hilangnya kelembaban dan melindungi kulit dari radikal bebas",
@@ -77,7 +77,7 @@ const Product = () => {
     },
     {
       id: 3,
-      image: "/product-3.png",
+      image: "/mostur-1.jpeg",
       name: "Skinaro Tea Brightening Moisturizer Gel",
       category: "BRIGHTENING CLEANSER",
       description:
@@ -88,17 +88,17 @@ const Product = () => {
           dexc: "Merupakan kandungan dengan tinggi antioksidan dapat bantu melindungi kerusakan sel akibat radikal bebas. Sehingga dapat mencegah inflamasi, hingga merawat kesehatan kulit.",
         },
         {
-            title: "Niacinamide 4%",
-            dexc: "Kandungan yang dapat membantu mengatasi permasalahan wajah yang kusam dengan membantu mencerahkan kulit, sehingga wajah terlihat lebih sehat tanpa memberikan efek samping. Serta dapat membantu mengatasi permasalahan kulit yang berjerawat.",
-          },
+          title: "Niacinamide 4%",
+          dexc: "Kandungan yang dapat membantu mengatasi permasalahan wajah yang kusam dengan membantu mencerahkan kulit, sehingga wajah terlihat lebih sehat tanpa memberikan efek samping. Serta dapat membantu mengatasi permasalahan kulit yang berjerawat.",
+        },
         {
           title: "Squalane",
           dexc: "Bantu meningkatkan hidrasi kulit dan membantu kulit terlihat lebih sehat. Kaya akan antioksidan bisa melawan kerusakan kulit serta radikal bebas, sehingga dapat menunda proses penuaan.",
         },
         {
-            title: "Peptide",
-            dexc: "sejenis peptide yang merupakan asam amino, yang berfungsi mendorong proses pembuatan protein, seperti kolagen dan elastin. Yang membantu mengatasi permasalahan kerutan dan kurangnya elastisitas pada wajah",
-          },
+          title: "Peptide",
+          dexc: "sejenis peptide yang merupakan asam amino, yang berfungsi mendorong proses pembuatan protein, seperti kolagen dan elastin. Yang membantu mengatasi permasalahan kerutan dan kurangnya elastisitas pada wajah",
+        },
       ],
     },
   ];
@@ -137,7 +137,7 @@ const Product = () => {
           {/* <div className="image h-[350px] md:h-[450px] md:w-1/2 flex justify-center items-center self-center p-12 md:p-16" > */}
 
           <div
-            className={`w-full bg-contain md:bg-contain bg-center image h-[350px] md:h-[350px] md:w-1/2 flex justify-center items-center self-center md:p-16 duration-500 transition-all bg-no-repeat`}
+            className={`w-full bg-contain md:bg-contain bg-center image h-[350px] md:h-[350px] md:w-2/3 flex justify-center items-center self-center md:p-8 duration-500 transition-all bg-no-repeat`}
             style={{ backgroundImage: `url(${productData[slider].image})` }}
           >
             {/* <img src={item.image} alt="" className="md:w-full h-full md:h-auto object-cover duration-500" /> */}
@@ -151,9 +151,8 @@ const Product = () => {
                 <div
                   key={index}
                   onClick={() => setSlider(index)}
-                  className={`img-box transition-all duration-200 h-16 w-16 border flex justify-center items-center cursor-pointer p-3 border-gray-300 rounded ${
-                    slider === index ? "" : "opacity-60"
-                  }`}
+                  className={`img-box transition-all duration-200 h-16 w-16 border flex justify-center items-center cursor-pointer p-3 border-gray-300 rounded ${slider === index ? "" : "opacity-60"
+                    }`}
                 >
                   <img
                     src={item.image}
@@ -176,55 +175,55 @@ const Product = () => {
           </div>
           <div className="ingridients self-start transition-all duration-300">
             <p className="font-semibold text-gray-700">Active Ingridients : </p>
-            
+
             {
-            productData[slider].ingridients.map((item, index) => (
+              productData[slider].ingridients.map((item, index) => (
                 <div className="mb-3" key={index}>
-                <p className="text-sm font-medium">{item.title}</p>
-                <p className="text-sm font-normal">{item.dexc}</p>
+                  <p className="text-sm font-medium">{item.title}</p>
+                  <p className="text-sm font-normal">{item.dexc}</p>
                 </div>
-            ))
+              ))
             }
           </div>
           <div className="flex self-start flex-wrap">
 
-          <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
-                >
-                  <img
-                    src={'/prodDesc1.png'}
-                    alt=""
-                    className="md:w-full h-full md:h-auto object-cover px-3"
-                    />
-                  <p className="text-[10px] text-center">Brightens with high antioxidant</p>
+            <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
+            >
+              <img
+                src={'/prodDesc1.png'}
+                alt=""
+                className="md:w-full h-full md:h-auto object-cover px-3"
+              />
+              <p className="text-[10px] text-center">Brightens with high antioxidant</p>
             </div>
-          <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
-                >
-                  <img
-                    src={'/prodDesc2.png'}
-                    alt=""
-                    className="md:w-full h-full md:h-auto object-cover px-3"
-                    />
-                  <p className="text-[10px] text-center">Exfoliate Gently</p>
+            <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
+            >
+              <img
+                src={'/prodDesc2.png'}
+                alt=""
+                className="md:w-full h-full md:h-auto object-cover px-3"
+              />
+              <p className="text-[10px] text-center">Exfoliate Gently</p>
             </div>
-          <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
-                >
-                  <img
-                    src={'/prodDesc3.png'}
-                    alt=""
-                    className="md:w-full h-full md:h-auto object-cover px-3"
-                    />
-                  <p className="text-[10px] text-center">Natural Calming  TeaScent</p>
+            <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
+            >
+              <img
+                src={'/prodDesc3.png'}
+                alt=""
+                className="md:w-full h-full md:h-auto object-cover px-3"
+              />
+              <p className="text-[10px] text-center">Natural Calming  TeaScent</p>
             </div>
-          <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
-                >
-                  <img
-                    src={'/prodDesc4.png'}
-                    alt=""
-                    className="md:w-full h-full md:h-auto object-cover px-3"
-                    />
-                  <p className="text-[10px] text-center">Suitable for  most skin types</p>
+            <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
+            >
+              <img
+                src={'/prodDesc4.png'}
+                alt=""
+                className="md:w-full h-full md:h-auto object-cover px-3"
+              />
+              <p className="text-[10px] text-center">Suitable for  most skin types</p>
             </div>
-                    </div>
+          </div>
           <div className="flex place-items-end self-end my-5">
             <button className="items-center justify-center py-3 px-8 text-white bg-[#6B826F] rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#6B826F] border hover:border-[#6B826F] transition-all duration-200">
               <BsCart className="text-xl" /> <span>Shop Now</span>
