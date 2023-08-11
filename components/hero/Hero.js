@@ -4,9 +4,9 @@ import { BsCart } from "react-icons/bs";
 
 const Hero = () => {
   const sliderItem = [
-    { id: 1, image: '/hero-skinaro.png' },
-    { id: 2, image: '/bg-1-skinaro.jpg' },
-    { id: 3, image: '/bg-2-skinaro.png' },
+    { id: 1, image: 'hero-skinaro.png' },
+    { id: 2, image: 'bg-1-skinaro.jpg' },
+    { id: 3, image: 'bg-2-skinaro.png' },
   ]
   const [slider, setSlider] = useState(0)
 

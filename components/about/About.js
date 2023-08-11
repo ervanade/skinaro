@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="about grid lg:grid-cols-2 gap-4 px-6 md:px-10 lg:px-10" id='why-aro'>
       <div className="left-about w-full object-cover">
-        <img src="/image 5.png" alt="" className="w-full h-full object-cover" />
+        <img src="image 5.png" alt="" className="w-full h-full object-cover" />
       </div>
       <div className="right-about bg-white flex flex-col justify-center px-6 w-full">
         <div className="about-description py-8 space-y-8 sm:space-y-14">

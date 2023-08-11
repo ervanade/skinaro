@@ -35,10 +35,10 @@ export default function Home() {
       {/* Section Benefit */}
       <div className="points-skinaro w-full flex flex-wrap justify-center items-center my-8 lg:my-16 container mx-auto max-w-7xl">
       
-        <img src="/natural1.png" alt="" className="w-2/6 sm:w-auto" />
-        <img src="/best1.png" alt="" className="w-2/6 sm:w-auto" />
-        <img src="/suit.png" alt="" className="w-2/6 sm:w-auto" />
-        <img src="/halal.png" alt="" className="w-2/6 sm:w-auto" />
+        <img src="natural1.png" alt="" className="w-2/6 sm:w-auto" />
+        <img src="best1.png" alt="" className="w-2/6 sm:w-auto" />
+        <img src="suit.png" alt="" className="w-2/6 sm:w-auto" />
+        <img src="halal.png" alt="" className="w-2/6 sm:w-auto" />
       </div>
 
       <Product />
@@ -50,7 +50,7 @@ export default function Home() {
 
           <div className="flex flex-col gap-3 sm:gap-6 w-full">
             <div className="image w-full md:h-[300px] lg:h-[400px]">
-              <img src="/arotea.png" alt="" className="w-full h-full object-cover" />
+              <img src="arotea.png" alt="" className="w-full h-full object-cover" />
             </div>
             <div className="description flex flex-col gap-2 sm:gap-4">
               <h1 className="text-[#8C9C7B] font-semibold  text-xl sm:text-2xl">
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-3 sm:gap-6 w-full">
             <div className="image w-full md:h-[300px] lg:h-[400px]">
-              <img src="/orthodoxtea.png" alt="" className="w-full h-full object-cover" />
+              <img src="orthodoxtea.png" alt="" className="w-full h-full object-cover" />
             </div>
             <div className="description flex flex-col gap-2 sm:gap-4">
               <h1 className="text-[#8C9C7B] font-semibold text-xl sm:text-2xl">

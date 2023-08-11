@@ -11,7 +11,7 @@ const Product = () => {
   const productData = [
     {
       id: 1,
-      image: "/prod-4.png",
+      image: "prod-4.png",
       name: "Skinaro Tea Brightening Cleanser",
       category: "BRIGHTENING CLEANSER",
       description:
@@ -33,7 +33,7 @@ const Product = () => {
     },
     {
       id: 4,
-      image: "/serum.jpeg",
+      image: "serum.jpeg",
       name: "Skinaro Tea Brightening Serum",
       category: "BRIGHTENING CLEANSER",
       description:
@@ -55,7 +55,7 @@ const Product = () => {
     },
     {
       id: 2,
-      image: "/toner.jpeg",
+      image: "toner.jpeg",
       name: "Skinaro Tea Brightening Essence Toner",
       category: "BRIGHTENING CLEANSER",
       description:
@@ -77,7 +77,7 @@ const Product = () => {
     },
     {
       id: 3,
-      image: "/mostur-1.jpeg",
+      image: "mostur-1.jpeg",
       name: "Skinaro Tea Brightening Moisturizer Gel",
       category: "BRIGHTENING CLEANSER",
       description:
@@ -190,7 +190,7 @@ const Product = () => {
             <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
             >
               <img
-                src={'/prodDesc1.png'}
+                src={'prodDesc1.png'}
                 alt=""
                 className="md:w-full h-full md:h-auto object-cover px-3"
               />
@@ -199,7 +199,7 @@ const Product = () => {
             <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
             >
               <img
-                src={'/prodDesc2.png'}
+                src={'prodDesc2.png'}
                 alt=""
                 className="md:w-full h-full md:h-auto object-cover px-3"
               />
@@ -208,7 +208,7 @@ const Product = () => {
             <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
             >
               <img
-                src={'/prodDesc3.png'}
+                src={'prodDesc3.png'}
                 alt=""
                 className="md:w-full h-full md:h-auto object-cover px-3"
               />
@@ -217,7 +217,7 @@ const Product = () => {
             <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
             >
               <img
-                src={'/prodDesc4.png'}
+                src={'prodDesc4.png'}
                 alt=""
                 className="md:w-full h-full md:h-auto object-cover px-3"
               />
