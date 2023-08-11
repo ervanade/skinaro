@@ -30,6 +30,24 @@ const Product = () => {
           dexc: "Merupakan micronized Hyaluronic  Acid (molekul jauh lebih kecil sehingga lebih mudah diserap kulit), yang menjaga kelembaban alami kulit serta memberikan efek tampilan yang lebih  glowing",
         },
       ],
+      benefit: [
+        {
+          img: "prodDesc1.png",
+          desc: "Brightens with high antioxidant"
+        },
+        {
+          img: "prodDesc2.png",
+          desc: "Exfoliate Gently"
+        },
+        {
+          img: "prodDesc3.png",
+          desc: "Natural Calming  TeaScent"
+        },
+        {
+          img: "prodDesc4.png",
+          desc: "Suitable for  most skin types"
+        },
+      ]
     },
     {
       id: 4,
@@ -52,6 +70,24 @@ const Product = () => {
           dexc: "sejenis peptide yang merupakan asam amino, yang berfungsi mendorong proses pembuatan protein, seperti kolagen dan elastin. Yang membantu mengatasi permasalahan kerutan dan kurangnya elastisitas pada wajah",
         },
       ],
+      benefit: [
+        {
+          img: "prodDesc1.png",
+          desc: "Brightens with high antioxidant"
+        },
+        {
+          img: "anti-aging.png",
+          desc: "Prevent anti-aging"
+        },
+        {
+          img: "prodDesc3.png",
+          desc: "Natural Calming  TeaScent"
+        },
+        {
+          img: "prodDesc4.png",
+          desc: "Suitable for  most skin types"
+        },
+      ]
     },
     {
       id: 2,
@@ -74,6 +110,24 @@ const Product = () => {
           dexc: "Bantu mencegah hilangnya kelembaban dan melindungi kulit dari radikal bebas",
         },
       ],
+      benefit: [
+        {
+          img: "prodDesc1.png",
+          desc: "Brightens with high antioxidant"
+        },
+        {
+          img: "ph-b.png",
+          desc: "pH Balance"
+        },
+        {
+          img: "prodDesc3.png",
+          desc: "Natural Calming  TeaScent"
+        },
+        {
+          img: "prodDesc4.png",
+          desc: "Suitable for  most skin types"
+        },
+      ]
     },
     {
       id: 3,
@@ -100,6 +154,28 @@ const Product = () => {
           dexc: "sejenis peptide yang merupakan asam amino, yang berfungsi mendorong proses pembuatan protein, seperti kolagen dan elastin. Yang membantu mengatasi permasalahan kerutan dan kurangnya elastisitas pada wajah",
         },
       ],
+      benefit: [
+        {
+          img: "prodDesc1.png",
+          desc: "Brightens with high antioxidant"
+        },
+        {
+          img: "prodDesc3.png",
+          desc: "Natural Calming  TeaScent"
+        },
+        {
+          img: "prodDesc4.png",
+          desc: "Suitable for  most skin types"
+        },
+        {
+          img: "uv.png",
+          desc: "UV- Protection"
+        },
+        {
+          img: "anti-aging.png",
+          desc: "Prevent anti-aging"
+        },
+      ]
     },
   ];
   const [slider, setSlider] = useState(0);
@@ -187,42 +263,20 @@ const Product = () => {
           </div>
           <div className="flex self-start flex-wrap">
 
-            <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
+            {
+            productData[slider].benefit.map((item, index) => (
+              <div key={index} className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
             >
               <img
-                src={'prodDesc1.png'}
-                alt=""
+                src={item.img}
+                alt={item.desc}
                 className="md:w-full h-full md:h-auto object-cover px-3"
               />
-              <p className="text-[10px] text-center">Brightens with high antioxidant</p>
+              <p className="text-[10px] text-center">{item.desc}</p>
             </div>
-            <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
-            >
-              <img
-                src={'prodDesc2.png'}
-                alt=""
-                className="md:w-full h-full md:h-auto object-cover px-3"
-              />
-              <p className="text-[10px] text-center">Exfoliate Gently</p>
-            </div>
-            <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
-            >
-              <img
-                src={'prodDesc3.png'}
-                alt=""
-                className="md:w-full h-full md:h-auto object-cover px-3"
-              />
-              <p className="text-[10px] text-center">Natural Calming  TeaScent</p>
-            </div>
-            <div className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
-            >
-              <img
-                src={'prodDesc4.png'}
-                alt=""
-                className="md:w-full h-full md:h-auto object-cover px-3"
-              />
-              <p className="text-[10px] text-center">Suitable for  most skin types</p>
-            </div>
+            ))
+            }
+
           </div>
           <div className="flex place-items-end self-end my-5">
             <button className="items-center justify-center py-3 px-8 text-white bg-[#6B826F] rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#6B826F] border hover:border-[#6B826F] transition-all duration-200">
