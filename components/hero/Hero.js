@@ -39,7 +39,7 @@ const Hero = () => {
           </div>
         </div> */}
       </div>
-      <div className="hero-image w-full h-full absolute top-0 left-0 duration-500 transition-all bg-contain bg-no-repeat sm:bg-contain" style={{ backgroundImage: `url(${sliderItem[slider].image})` }}>
+      <div className="hero-image w-full h-full absolute top-0 left-0 duration-500 transition-all bg-contain bg-no-repeat bg-center sm:bg-contain" style={{ backgroundImage: `url(${sliderItem[slider].image})` }}>
       </div>
       {/* <img
         src={sliderItem[slider]?.image}
