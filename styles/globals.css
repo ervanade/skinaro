@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Luxyna;
+  src: url(./font/LUXYNA.ttf);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding: 5rem;
