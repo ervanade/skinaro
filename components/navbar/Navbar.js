@@ -41,16 +41,16 @@ const Navbar = () => {
           {color ? (
             <img src="/skinaro-logo-hitam.png" alt="" className="w-28 h-14" />
           ) : (
-            <img src="/skinaro_white_green.png" alt="" className="w-28 h-14" />
+            <img src="/skinaro-logo-hitam.png" alt="" className="w-28 h-14" />
           )}
         </div>
         <button className="lg:hidden" onClick={buttonOnChangeBars}>
-          <GiHamburgerMenu className={`text-2xl ${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white'} `} />
+          <GiHamburgerMenu className={`text-2xl ${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-700 hover:text-white'} `} />
         </button>
         <div className="right-navbar space-x-6 hidden lg:block">
           {navbarMenu.map(item => {
             return (
-              <a key={item.id} href={item.link} className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-200 hover:text-white '} text-xl ${item.name === 'Home' ? 'font-normal' : ''} ${item.name === 'Home' && !color ? '!text-white' : ''}`}>
+              <a key={item.id} href={item.link} className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-700 hover:text-white '} text-xl ${item.name === 'Home' ? 'font-normal' : ''} ${item.name === 'Home' && !color ? '!text-gray-700' : ''}`}>
                 {item.name}
               </a>
             )
@@ -58,10 +58,10 @@ const Navbar = () => {
 
         </div>
         <div className={`right-navbar z-50 space-y-4 flex flex-col fixed top-0 ${menuButton ? 'right-0' : '-right-[350px]'} lg:hidden w-[350px] py-16 px-14 bg-[#9faca0] text-white h-full duration-200 transition-all ease-in`}>
-          <button className='absolute top-5 right-6' onClick={buttonOnChangeClose}><GiHamburgerMenu className='text-3xl text-gray-200 hover:text-white ' /></button>
+          <button className='absolute top-5 right-6' onClick={buttonOnChangeClose}><GiHamburgerMenu className='text-3xl text-gray-700 hover:text-white ' /></button>
           {navbarMenu.map(item => {
             return (
-              <a key={item.id} href={item.link} className={`text-xl text-gray-200 hover:text-white font-medium `}>
+              <a key={item.id} href={item.link} className={`text-xl text-gray-700 hover:text-white font-medium `}>
                 {item.name}
               </a>
             )

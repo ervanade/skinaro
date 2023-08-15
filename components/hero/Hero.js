@@ -4,23 +4,25 @@ import { BsCart } from "react-icons/bs";
 
 const Hero = () => {
   const sliderItem = [
-    { id: 1, image: 'hero-skinaro.png' },
-    { id: 2, image: 'bg-1-skinaro.jpg' },
-    { id: 3, image: 'bg-2-skinaro.png' },
+    // { id: 1, image: 'hero-skinaro.png' },
+    // { id: 2, image: 'bg-1-skinaro.jpg' },
+    // { id: 3, image: 'bg-2-skinaro.png' },
+    { id: 4, image: 'assets/hero/hero-bg-3.png' },
+    { id: 4, image: 'assets/hero/hero-bg-mobile-1.png' }
   ]
   const [slider, setSlider] = useState(0)
 
-  useEffect(() => {
-    const interval = setInterval(() => setSlider((prev) => (prev === (sliderItem.length - 1) ? 0 : prev + 1)), 3000)
-    return () => clearInterval(interval)
-  }, [])
+  // useEffect(() => {
+  //   const interval = setInterval(() => setSlider((prev) => (prev === (sliderItem.length - 1) ? 0 : prev + 1)), 3000)
+  //   return () => clearInterval(interval)
+  // }, [])
 
 
   return (
     <div className="hero relative w-screen h-screen overflow-hidden" id="hero">
-      <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-20 z-[2]"></div>
+      {/* <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-5 z-[2]"></div> */}
       <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 py-4 w-full h-full relative bg-transparent z-10" >
-        <div className="text absolute top-36 sm:left-16 left-10 lg:left-40  left-50 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col space-y-10">
+        {/* <div className="text absolute top-36 sm:left-16 left-10 lg:left-40  left-50 max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg flex flex-col space-y-10">
           <div className="text flex flex-col space-y-8">
             <h1 className="text-4xl tracking-[4px] leading-[40px] lg:text-5xl font-bold lg:tracking-[12px] lg:leading-[60px]">
               SKINARO TEA BRIGHTENING CLEANSER
@@ -35,10 +37,9 @@ const Hero = () => {
               <BsCart className="text-xl" /> <span>Shop Now</span>
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="hero-image w-full h-full absolute top-0 left-0 duration-500 transition-all bg-cover" style={{ backgroundImage: `url(${sliderItem[slider].image})` }}>
-
+      <div className="hero-image w-full h-full absolute top-0 left-0 duration-500 transition-all bg-contain bg-no-repeat sm:bg-contain" style={{ backgroundImage: `url(${sliderItem[slider].image})` }}>
       </div>
       {/* <img
         src={sliderItem[slider]?.image}
