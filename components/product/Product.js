@@ -197,7 +197,7 @@ const Product = () => {
       className="product w-full mt-8 mb-10 md:my-16 flex flex-col justify-center items-center py-8 md:py-24 bg-cover bg-no-repeat relative"
       id="product" style={{ backgroundImage: `url(assets/about/about-bg.png)` }}
     >
-      <Image src={"/assets/product/leaf-orange-prod.png"} width={180} height={190} className='absolute top-0 md:top-3 left-10 lg:w-[180px] lg:h-[190px] w-24 h-24' />
+      <Image src={"/assets/product/leaf-orange-prod.png"} width={180} height={190} className='absolute top-0 md:top-3 left-0 md:left-10 lg:w-[160px] lg:h-[170px] w-20 h-20 sm:w-24 sm:h-24' />
       <Image src={"/assets/product/star-prod.png"} width={76} height={50} className='absolute bottom-5 right-12 md:block hidden' />
       <h1 className="font-luxyna text-black text-center mb-16 text-4xl md:text-7xl">Our Product</h1>
       <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-black flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0 group relative">
