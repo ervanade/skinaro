@@ -39,18 +39,18 @@ const Navbar = () => {
       <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 py-4 flex justify-between items-center">
         <div className="left-navbar">
           {color ? (
-            <img src="/skinaro-logo-hitam.png" alt="" className="w-28 h-14" />
+            <img src="/logo-hitam.png" alt="" className="w-28 h-10 md:w-44 md:h-14" />
           ) : (
-            <img src="/skinaro-logo-hitam.png" alt="" className="w-28 h-14" />
+            <img src="/logo-hitam.png" alt="" className="w-28 h-10 md:w-44 md:h-14" />
           )}
         </div>
         <button className="lg:hidden" onClick={buttonOnChangeBars}>
-          <GiHamburgerMenu className={`text-2xl ${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-700 hover:text-white'} `} />
+          <GiHamburgerMenu className={`text-2xl ${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-700 hover:text-gray-900'} `} />
         </button>
         <div className="right-navbar space-x-6 hidden lg:block">
           {navbarMenu.map(item => {
             return (
-              <a key={item.id} href={item.link} className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-700 hover:text-white '} text-xl ${item.name === 'Home' ? 'font-normal' : ''} ${item.name === 'Home' && !color ? '!text-gray-700' : ''}`}>
+              <a key={item.id} href={item.link} className={`${color ? 'text-[#6B826F] hover:text-[#5e8a65]' : 'text-gray-700 hover:text-gray-900 '} text-xl ${item.name === 'Home' ? 'font-normal' : ''} ${item.name === 'Home' && !color ? '!text-gray-700' : ''}`}>
                 {item.name}
               </a>
             )
@@ -61,7 +61,7 @@ const Navbar = () => {
           <button className='absolute top-5 right-6' onClick={buttonOnChangeClose}><GiHamburgerMenu className='text-3xl text-gray-700 hover:text-white ' /></button>
           {navbarMenu.map(item => {
             return (
-              <a key={item.id} href={item.link} className={`text-xl text-gray-700 hover:text-white font-medium `}>
+              <a key={item.id} href={item.link} className={`text-xl text-gray-200 hover:text-white font-medium `}>
                 {item.name}
               </a>
             )

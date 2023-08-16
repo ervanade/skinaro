@@ -10,6 +10,7 @@ import About from "../components/about/About";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Product from "../components/product/Product";
+import Benefit from "../components/benefit/Benefit";
 
 export default function Home() {
 
@@ -33,19 +34,19 @@ export default function Home() {
 
 
       {/* Section Benefit */}
-      <div className="points-skinaro w-full flex flex-wrap justify-center items-center my-8 lg:my-16 container mx-auto max-w-7xl">
+      <div className="points-skinaro w-full flex flex-wrap justify-center items-center my-8 lg:my-16 container mx-auto max-w-7xl gap-12">
       
-        <img src="natural1.png" alt="" className="w-2/6 sm:w-auto" />
-        <img src="best1.png" alt="" className="w-2/6 sm:w-auto" />
-        <img src="suit.png" alt="" className="w-2/6 sm:w-auto" />
-        <img src="halal.png" alt="" className="w-2/6 sm:w-auto" />
+        <img src="assets/icon/icon-1.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px] " />
+        <img src="assets/icon/icon-2.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
+        <img src="assets/icon/icon-4.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
+        <img src="assets/icon/icon-5.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
       </div>
 
       <Product />
 
       {/* Section Benefit */}
 
-      <div className="arotea w-full mb-16">
+      {/* <div className="arotea w-full mb-16">
         <div className="container mx-auto max-w-7xl gap-10 px-6 md:px-10 lg:px-24 flex justify-center flex-col md:flex-row ">
 
           <div className="flex flex-col gap-3 sm:gap-6 w-full">
@@ -53,7 +54,7 @@ export default function Home() {
               <img src="arotea.png" alt="" className="w-full h-full object-cover" />
             </div>
             <div className="description flex flex-col gap-2 sm:gap-4">
-              <h1 className="text-[#8C9C7B] font-semibold  text-xl sm:text-2xl">
+              <h1 className="text-black font-luxyna  text-xl sm:text-2xl">
                 Benefits using Aro Tea
               </h1>
               <p className="text-[#5C5858] font-normal text-sm sm:text-base">
@@ -70,7 +71,7 @@ export default function Home() {
               <img src="orthodoxtea.png" alt="" className="w-full h-full object-cover" />
             </div>
             <div className="description flex flex-col gap-2 sm:gap-4">
-              <h1 className="text-[#8C9C7B] font-semibold text-xl sm:text-2xl">
+              <h1 className="text-black font-luxyna  text-xl sm:text-2xl">
                 The best Orthodox tea
               </h1>
               <p className="text-[#5C5858] font-normal text-sm sm:text-base">
@@ -79,7 +80,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <Benefit />
 
 
       {/* Section Contact */}
