@@ -34,5 +34,5 @@ body {
 }
 
 .font-luxyna {
-  font-family: "Luxyna";
+  font-family: "Luxyna" !important;
 }
