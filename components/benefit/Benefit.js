@@ -3,13 +3,14 @@ import React from 'react'
 
 const Benefit = () => {
   return (
-    <div className="arotea w-full mb-16 relative py-8 md:py-24">
+    <div className="arotea w-full mb-16 relative py-8 md:pb-24 md:pt-12 bg-cover bg-no-repeat" style={{ backgroundImage: `url(assets/about/about-bg.png)` }}>
 
               <Image src={"/assets/leaf-orange-2.png"} width={139} height={122} className='absolute bottom-0 right-5 md:block hidden' />
               <Image src={"/assets/vector.png"} width={24} height={24} className='absolute bottom-3 right-48 md:block hidden' />
+              
 
-    <div className="container mx-auto max-w-7xl gap-10 px-6 md:px-10 lg:px-24 flex justify-center flex-col md:flex-row ">
-
+    <div className="container mx-auto max-w-7xl gap-10 px-6 md:px-10 lg:px-24 flex justify-center flex-col md:flex-row relative ">
+    <Image src={"/assets/vector.png"} width={32} height={32} className='absolute bottom-5 left-0 lg:left-5 md:block hidden' />
       <div className="flex flex-col gap-3 sm:gap-6 w-full">
       <div className="description flex flex-col gap-2 sm:gap-4">
           <h1 className="text-black font-luxyna  text-xl sm:text-3xl">

@@ -9,15 +9,15 @@ const Contact = () => {
         <div className="form w-full">
           <form className="w-full lg:w-[800px] space-y-10 mx-auto">
             <div className="form-top flex justify-center md:items-center  gap-4 md:gap-6 lg:gap-8 md:flex-row flex-col">
-              <div className="name flex w-full flex-col gap-5"><label htmlFor="name" className="text-base sm:text-xl tracking-[4px]">Your Name</label> <input type="text" className="px-4 py-3 text-gray-800 bg-gray-50 border border-gray-300 text-sm rounded-lg !focus:none block w-full p-2.5 focus:border-none focus:ring-0 focus:outline-none" placeholder="Type Your Name" /></div>
-              <div className="name flex w-full flex-col gap-5"><label htmlFor="name" className="text-base sm:text-xl tracking-[4px]">Email</label> <input type="text" className="px-4 py-3 text-gray-800 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:none block w-full p-2.5 focus:outline-none" placeholder="Type Your Email" /></div>
-              <div className="name flex w-full flex-col gap-5"><label htmlFor="name" className="text-base sm:text-xl tracking-[4px]">Handphone</label> <input type="text" className="px-4 py-3 text-gray-800 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:none block w-full p-2.5 focus:outline-none" placeholder="Type Your Phone Number" /></div>
+              <div className="name flex w-full flex-col gap-5"><label htmlFor="name" className="text-base sm:text-xl font-luxyna tracking-[4px]">Your Name</label> <input type="text" className="px-4 py-3 text-gray-800 bg-gray-50 border border-gray-300 text-sm rounded-lg !focus:none block w-full p-2.5 focus:border-none focus:ring-0 focus:outline-none" placeholder="Type Your Name" /></div>
+              <div className="name flex w-full flex-col gap-5"><label htmlFor="name" className="text-base sm:text-xl font-luxyna tracking-[4px]">Phone Number</label> <input type="text" className="px-4 py-3 text-gray-800 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:none block w-full p-2.5 focus:outline-none" placeholder="Type Your Phone Number" /></div>
+              <div className="name flex w-full flex-col gap-5"><label htmlFor="name" className="text-base sm:text-xl font-luxyna tracking-[4px]">Email</label> <input type="text" className="px-4 py-3 text-gray-800 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:none block w-full p-2.5 focus:outline-none" placeholder="Type Your Email" /></div>
             </div>
             <div className="form-bottom">
               <div className="name flex flex-col gap-5"><textarea id="message" rows="4" className="px-4 py-3 text-gray-800 bg-gray-50 border border-gray-300 text-sm rounded-lg focus:ring-green-800 focus:border-greenring-green-800 block w-full p-2.5 focus:outline-none" placeholder="Type Your Message" /></div>
             </div>
             <div className="justify-center items-center w-full flex">
-              <a href="send" className="px-16 py-3 bg-[#FC7F66] rounded-lg lg:mt-6 hover:bg-white hover:text-[#FC7F66] transition-all duration-200">
+              <a href="send" className="px-20 py-3 bg-[#FC7F66] rounded-xl lg:mt-6 hover:bg-white hover:text-[#FC7F66] transition-all duration-200">
                 Send
               </a>
             </div>
