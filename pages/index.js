@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { BsCart, BsFillChatDotsFill } from "react-icons/bs";
 import Navbar from "../components/navbar/Navbar";
@@ -13,7 +13,9 @@ import Product from "../components/product/Product";
 import Benefit from "../components/benefit/Benefit";
 
 export default function Home() {
-
+useEffect(() => {
+  window.scrollTo(0, 0)
+}, [])
   return (
     <>
       <Head>
@@ -36,10 +38,10 @@ export default function Home() {
       {/* Section Benefit */}
       <div className="points-skinaro w-full flex flex-wrap justify-center items-center my-8 lg:my-16 container mx-auto max-w-7xl gap-12 bg-cover bg-no-repeat" style={{ backgroundImage: `url(assets/about/about-bg.png)` }}>
       
-        <img src="assets/icon/icon-1.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px] " />
-        <img src="assets/icon/icon-2.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
-        <img src="assets/icon/icon-4.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
-        <img src="assets/icon/icon-5.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
+        <img src="assets/icon/Icon-1.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px] " />
+        <img src="assets/icon/Icon-2.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
+        <img src="assets/icon/Icon-4.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
+        <img src="assets/icon/Icon-5.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
       </div>
 
       <Product />
