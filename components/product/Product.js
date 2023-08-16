@@ -196,7 +196,7 @@ const Product = () => {
       className="product w-full mt-8 mb-10 md:my-16 flex flex-col justify-center items-center py-8 md:py-24 bg-cover bg-no-repeat relative"
       id="product" style={{ backgroundImage: `url(assets/about/about-bg.png)` }}
     >
-      <Image src={"/assets/product/leaf-orange-prod.png"} width={180} height={190} className='absolute top-3 left-10 lg:w-[180px] lg:h-[190px] w-24 h-24' />
+      <Image src={"/assets/product/leaf-orange-prod.png"} width={180} height={190} className='absolute top-0 md:top-3 left-10 lg:w-[180px] lg:h-[190px] w-24 h-24' />
       <Image src={"/assets/product/star-prod.png"} width={76} height={50} className='absolute bottom-5 right-12 md:block hidden' />
       <h1 className="font-luxyna text-black text-center mb-16 text-4xl md:text-7xl">Our Product</h1>
       <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-black flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0 group relative">
@@ -248,9 +248,16 @@ const Product = () => {
         <div className="text_container flex flex-col gap-4 justify-center items-center md:w-full transition-all duration-300 relative">
        
         <Image src={"/assets/vector.png"} width={24} height={24} className='absolute top-0 -left-12 md:block hidden' />
-          <h1 className="text-5xl font-luxyna text-[black] self-start transition-all duration-300">
+          <h1 className="text-3xl md:text-5xl font-luxyna text-[black] self-start transition-all duration-300">
             {productData[slider].name}
           </h1>
+          <div className="tab justify-start self-start py-2">
+            <div className="tab-header flex gap-2">
+              <button className="bg-[#D9D9D9] text-black font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl">About</button>
+              <button className="bg-[#5F8171] text-white font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black">How To Use</button>
+              <button className="bg-[#5F8171] text-white font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black">Ingridients</button>
+            </div>
+          </div>
           <div className="deskripsi text-gray-700 transition-all duration-300">
             <p className="font-semibold text-2xl text-black font-luxyna">Description : </p>
             <p className="font-light text-black text-sm">{productData[slider].description}</p>
@@ -285,7 +292,7 @@ const Product = () => {
 
           </div>
           <div className="flex place-items-end self-end my-5">
-            <button className="items-center justify-center py-3 px-8 text-white bg-[#FC7F66] rounded-full flex flex-row space-x-2 hover:bg-white hover:text-[#FC7F66] border hover:border-[#FC7F66] transition-all duration-200">
+            <button className="items-center justify-center py-3 px-8 text-white bg-[#FC7F66] rounded-xl flex flex-row space-x-2 hover:bg-white hover:text-[#FC7F66] border hover:border-[#FC7F66] transition-all duration-200">
               <BsCart className="text-xl" /> <span>Shop Now</span>
             </button>
           </div>
