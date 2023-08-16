@@ -194,7 +194,7 @@ const Product = () => {
   };
   return (
     <div
-      className="product w-full mt-8 mb-10 md:my-16 flex flex-col justify-center items-center py-8 md:py-24 bg-cover bg-no-repeat relative"
+      className="product w-full md:my-16 flex flex-col justify-center items-center py-8 md:py-24 bg-cover bg-no-repeat relative"
       id="product" style={{ backgroundImage: `url(assets/about/about-bg.png)` }}
     >
       <Image src={"/assets/product/leaf-orange-prod.png"} width={180} height={190} className='absolute top-0 md:top-3 left-0 md:left-10 lg:w-[160px] lg:h-[170px] w-20 h-20 sm:w-24 sm:h-24' />
