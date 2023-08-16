@@ -38,10 +38,10 @@ useEffect(() => {
       {/* Section Benefit */}
       <div className="points-skinaro w-full flex flex-wrap justify-center items-center my-8 lg:my-16 container mx-auto max-w-7xl gap-12 bg-cover bg-no-repeat" style={{ backgroundImage: `url(assets/about/about-bg.png)` }}>
       
-        <img src="assets/icon/Icon-1.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px] " />
-        <img src="assets/icon/Icon-2.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
-        <img src="assets/icon/Icon-4.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
-        <img src="assets/icon/Icon-5.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
+        <img src="assets/Icon/Icon-1.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px] " />
+        <img src="assets/Icon/Icon-2.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
+        <img src="assets/Icon/Icon-4.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
+        <img src="assets/Icon/Icon-5.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
       </div>
 
       <Product />
