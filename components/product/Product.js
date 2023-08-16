@@ -180,6 +180,7 @@ const Product = () => {
     
   ];
   const [slider, setSlider] = useState(0);
+  const [productDesc, setProductDesc] = useState("about");
 
   // useEffect(() => {
   //     const interval = setInterval(() => setSlider((prev) => (prev === (productData.length - 1) ? 0 : prev + 1)), 3000)
