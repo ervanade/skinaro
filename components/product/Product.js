@@ -243,6 +243,16 @@ const Product = () => {
               );
             })}
           </div>
+             <div className="controller flex gap-2 justify-center w-full">
+
+        {
+          productData.map((item, index) => {
+            return (
+              <div key={item.id} className={`h-2 rounded-lg cursor-pointer transition-all duration-200 ${slider === index ? 'bg-[#D9D9D9] w-20' : 'bg-[#FC7F66] w-12'}`} onClick={() => setSlider(index)}></div>
+            )
+          })
+        }
+      </div>
         </div>
 
         <div className="text_container flex flex-col gap-4 justify-center items-center md:w-full transition-all duration-300 relative">
