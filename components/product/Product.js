@@ -286,28 +286,41 @@ const Product = () => {
             <div className="tab-header flex gap-2">
               <button
                 onClick={() => setProductDesc("about")}
-                className="bg-[#D9D9D9] text-black font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl"
+                className={`${productDesc === "about" ? "bg-[#D9D9D9] text-black" : "bg-[#5F8171] text-white"} font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl`}
               >
                 About
               </button>
               <button
                 onClick={() => setProductDesc("how")}
-                className="bg-[#5F8171] text-white font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black"
+                className={`${productDesc === "how" ? "bg-[#D9D9D9] text-black" : "bg-[#5F8171] text-white"}  font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black`}
               >
                 How To Use
               </button>
               <button
                 onClick={() => setProductDesc("ingridients")}
-                className="bg-[#5F8171] text-white font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black"
+                className={` ${productDesc === "ingridients" ? "bg-[#D9D9D9] text-black" : "bg-[#5F8171] text-white"} font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black`}
               >
                 Ingridients
               </button>
             </div>
           </div>
-          <div className={`deskripsi text-gray-700 transition-all duration-300`}>
+          {/* <div className={`deskripsi text-gray-700 transition-all duration-300 ${productDesc === "about" ? "block" : "opacity-0 hidden"} transition-all duration-300`}>
             <p className="font-semibold text-2xl text-black font-luxyna">Description : </p>
             <p className="font-light text-black text-sm">{productData[slider].description}</p>
           </div>
+
+          <div className={`ingridients self-start transition-all duration-300 ${productDesc === "ingridients" ? "block" : "opacity-0 hidden"}`}>
+            <p className="font-semibold text-2xl text-black font-luxyna">Active Ingridients : </p>
+
+            {
+              productData[slider].ingridients.map((item, index) => (
+                <div className="mb-3" key={index}>
+                  <p className="text-sm font-normal">{item.title}</p>
+                  <p className="text-sm font-light">{item.dexc}</p>
+                </div>
+              ))
+            }
+          </div> */}
           {/* {productDesc === "about" ?
           <>
           <div className="deskripsi text-gray-700 transition-all duration-300">
@@ -316,21 +329,21 @@ const Product = () => {
           </div>
           <div className="flex self-start flex-wrap">
 
-{
-productData[slider].benefit.map((item, index) => (
-  <div key={index} className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
->
-  <img
-    src={item.img}
-    alt={item.desc}
-    className="md:w-full h-full md:h-auto object-cover px-3"
-  />
-  <p className="text-[10px] text-center">{item.desc}</p>
-</div>
-))
-}
+          {
+          productData[slider].benefit.map((item, index) => (
+            <div key={index} className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
+          >
+            <img
+              src={item.img}
+              alt={item.desc}
+              className="md:w-full h-full md:h-auto object-cover px-3"
+            />
+            <p className="text-[10px] text-center">{item.desc}</p>
+          </div>
+          ))
+          }
 
-</div>
+          </div>
           </>
           : productDesc === "how" ?
           <><div className="ingridients self-start transition-all duration-300">
