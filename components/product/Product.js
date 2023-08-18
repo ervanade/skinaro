@@ -279,7 +279,7 @@ const Product = () => {
             height={24}
             className="absolute top-0 -left-12 md:block hidden"
           />
-          <h1 className="text-3xl md:text-5xl font-luxyna text-[black] self-start transition-all duration-300">
+          <h1 className="text-3xl lg:text-5xl font-luxyna text-[black] self-start transition-all duration-300">
             {productData[slider].name}
           </h1>
           <div className="tab justify-start self-start py-2">
