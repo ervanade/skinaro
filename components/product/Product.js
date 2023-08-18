@@ -37,25 +37,25 @@ const Product = () => {
       benefit: [
         {
           img: "prodDesc1.png",
-          desc: "Brightens with high antioxidant"
+          desc: "Brightens with high antioxidant",
         },
         {
           img: "prodDesc3.png",
-          desc: "Natural Calming  TeaScent"
+          desc: "Natural Calming  TeaScent",
         },
         {
           img: "prodDesc4.png",
-          desc: "Suitable for  most skin types"
+          desc: "Suitable for  most skin types",
         },
         {
           img: "uv.png",
-          desc: "UV- Protection"
+          desc: "UV- Protection",
         },
         {
           img: "anti-aging.png",
-          desc: "Prevent anti-aging"
+          desc: "Prevent anti-aging",
         },
-      ]
+      ],
     },
     {
       id: 1,
@@ -81,21 +81,21 @@ const Product = () => {
       benefit: [
         {
           img: "prodDesc1.png",
-          desc: "Brightens with high antioxidant"
+          desc: "Brightens with high antioxidant",
         },
         {
           img: "prodDesc2.png",
-          desc: "Exfoliate Gently"
+          desc: "Exfoliate Gently",
         },
         {
           img: "prodDesc3.png",
-          desc: "Natural Calming  TeaScent"
+          desc: "Natural Calming  TeaScent",
         },
         {
           img: "prodDesc4.png",
-          desc: "Suitable for  most skin types"
+          desc: "Suitable for  most skin types",
         },
-      ]
+      ],
     },
     {
       id: 4,
@@ -121,21 +121,21 @@ const Product = () => {
       benefit: [
         {
           img: "prodDesc1.png",
-          desc: "Brightens with high antioxidant"
+          desc: "Brightens with high antioxidant",
         },
         {
           img: "anti-aging.png",
-          desc: "Prevent anti-aging"
+          desc: "Prevent anti-aging",
         },
         {
           img: "prodDesc3.png",
-          desc: "Natural Calming  TeaScent"
+          desc: "Natural Calming  TeaScent",
         },
         {
           img: "prodDesc4.png",
-          desc: "Suitable for  most skin types"
+          desc: "Suitable for  most skin types",
         },
-      ]
+      ],
     },
     {
       id: 2,
@@ -161,23 +161,22 @@ const Product = () => {
       benefit: [
         {
           img: "prodDesc1.png",
-          desc: "Brightens with high antioxidant"
+          desc: "Brightens with high antioxidant",
         },
         {
           img: "ph-b.png",
-          desc: "pH Balance"
+          desc: "pH Balance",
         },
         {
           img: "prodDesc3.png",
-          desc: "Natural Calming  TeaScent"
+          desc: "Natural Calming  TeaScent",
         },
         {
           img: "prodDesc4.png",
-          desc: "Suitable for  most skin types"
+          desc: "Suitable for  most skin types",
         },
-      ]
+      ],
     },
-    
   ];
   const [slider, setSlider] = useState(0);
   const [productDesc, setProductDesc] = useState("about");
@@ -195,11 +194,24 @@ const Product = () => {
   return (
     <div
       className="product w-full md:my-16 flex flex-col justify-center items-center py-8 md:py-24 bg-cover bg-no-repeat relative"
-      id="product" style={{ backgroundImage: `url(assets/about/about-bg.png)` }}
+      id="product"
+      style={{ backgroundImage: `url(assets/about/about-bg.png)` }}
     >
-      <Image src={"/assets/product/leaf-orange-prod.png"} width={180} height={190} className='absolute top-0 md:top-3 left-0 md:left-10 lg:w-[160px] lg:h-[170px] w-20 h-20 sm:w-24 sm:h-24' />
-      <Image src={"/assets/product/star-prod.png"} width={76} height={50} className='absolute bottom-5 right-12 md:block hidden' />
-      <h1 className="font-luxyna text-black text-center mb-16 text-4xl md:text-7xl">Our Product</h1>
+      <Image
+        src={"/assets/product/leaf-orange-prod.png"}
+        width={180}
+        height={190}
+        className="absolute top-0 md:top-3 left-0 md:left-10 lg:w-[160px] lg:h-[170px] w-20 h-20 sm:w-24 sm:h-24"
+      />
+      <Image
+        src={"/assets/product/star-prod.png"}
+        width={76}
+        height={50}
+        className="absolute bottom-5 right-12 md:block hidden"
+      />
+      <h1 className="font-luxyna text-black text-center mb-16 text-4xl md:text-7xl">
+        Our Product
+      </h1>
       <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-black flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0 group relative">
         <div
           onClick={prevOnClick}
@@ -232,8 +244,9 @@ const Product = () => {
                 <div
                   key={index}
                   onClick={() => setSlider(index)}
-                  className={`img-box transition-all duration-200 h-16 w-16 border flex justify-center items-center cursor-pointer p-3 border-gray-300 rounded ${slider === index ? "" : "opacity-60"
-                    }`}
+                  className={`img-box transition-all duration-200 h-16 w-16 border flex justify-center items-center cursor-pointer p-3 border-gray-300 rounded ${
+                    slider === index ? "" : "opacity-60"
+                  }`}
                 >
                   <img
                     src={item.image}
@@ -244,31 +257,111 @@ const Product = () => {
               );
             })}
           </div>
-             <div className="controller flex gap-2 justify-center w-full">
-
-        {
-          productData.map((item, index) => {
-            return (
-              <div key={item.id} className={`h-2 rounded-lg cursor-pointer transition-all duration-200 ${slider === index ? 'bg-[#D9D9D9] w-20' : 'bg-[#FC7F66] w-12'}`} onClick={() => setSlider(index)}></div>
-            )
-          })
-        }
-      </div>
+          <div className="controller flex gap-2 justify-center w-full">
+            {productData.map((item, index) => {
+              return (
+                <div
+                  key={item.id}
+                  className={`h-2 rounded-lg cursor-pointer transition-all duration-200 ${
+                    slider === index ? "bg-[#D9D9D9] w-20" : "bg-[#FC7F66] w-12"
+                  }`}
+                  onClick={() => setSlider(index)}
+                ></div>
+              );
+            })}
+          </div>
         </div>
 
         <div className="text_container flex flex-col gap-4 justify-center items-center md:w-full transition-all duration-300 relative">
-       
-        <Image src={"/assets/vector.png"} width={24} height={24} className='absolute top-0 -left-12 md:block hidden' />
+          <Image
+            src={"/assets/vector.png"}
+            width={24}
+            height={24}
+            className="absolute top-0 -left-12 md:block hidden"
+          />
           <h1 className="text-3xl md:text-5xl font-luxyna text-[black] self-start transition-all duration-300">
             {productData[slider].name}
           </h1>
           <div className="tab justify-start self-start py-2">
             <div className="tab-header flex gap-2">
-              <button className="bg-[#D9D9D9] text-black font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl">About</button>
-              <button className="bg-[#5F8171] text-white font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black">How To Use</button>
-              <button className="bg-[#5F8171] text-white font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black">Ingridients</button>
+              <button
+                onClick={() => setProductDesc("about")}
+                className="bg-[#D9D9D9] text-black font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl"
+              >
+                About
+              </button>
+              <button
+                onClick={() => setProductDesc("how")}
+                className="bg-[#5F8171] text-white font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black"
+              >
+                How To Use
+              </button>
+              <button
+                onClick={() => setProductDesc("ingridients")}
+                className="bg-[#5F8171] text-white font-luxyna px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black"
+              >
+                Ingridients
+              </button>
             </div>
           </div>
+          <div className={`deskripsi text-gray-700 transition-all duration-300`}>
+            <p className="font-semibold text-2xl text-black font-luxyna">Description : </p>
+            <p className="font-light text-black text-sm">{productData[slider].description}</p>
+          </div>
+          {/* {productDesc === "about" ?
+          <>
+          <div className="deskripsi text-gray-700 transition-all duration-300">
+            <p className="font-semibold text-2xl text-black font-luxyna">Description : </p>
+            <p className="font-light text-black text-sm">{productData[slider].description}</p>
+          </div>
+          <div className="flex self-start flex-wrap">
+
+{
+productData[slider].benefit.map((item, index) => (
+  <div key={index} className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
+>
+  <img
+    src={item.img}
+    alt={item.desc}
+    className="md:w-full h-full md:h-auto object-cover px-3"
+  />
+  <p className="text-[10px] text-center">{item.desc}</p>
+</div>
+))
+}
+
+</div>
+          </>
+          : productDesc === "how" ?
+          <><div className="ingridients self-start transition-all duration-300">
+          <p className="font-semibold text-2xl text-black font-luxyna">How To Use : </p>
+
+          {
+            productData[slider].ingridients.map((item, index) => (
+              <div className="mb-3" key={index}>
+                <p className="text-sm font-normal">{item.title}</p>
+                <p className="text-sm font-light">{item.dexc}</p>
+              </div>
+            ))
+          }
+        </div></>
+          : productDesc === "ingridients" ? 
+          <>
+          <div className="ingridients self-start transition-all duration-300">
+            <p className="font-semibold text-2xl text-black font-luxyna">Active Ingridients : </p>
+
+            {
+              productData[slider].ingridients.map((item, index) => (
+                <div className="mb-3" key={index}>
+                  <p className="text-sm font-normal">{item.title}</p>
+                  <p className="text-sm font-light">{item.dexc}</p>
+                </div>
+              ))
+            }
+          </div>
+          </>
+          : null  
+        } */}
           <div className="deskripsi text-gray-700 transition-all duration-300">
             <p className="font-semibold text-2xl text-black font-luxyna">Description : </p>
             <p className="font-light text-black text-sm">{productData[slider].description}</p>
@@ -302,6 +395,7 @@ const Product = () => {
             }
 
           </div>
+
           <div className="flex place-items-end self-end my-5">
             <button className="items-center justify-center py-3 px-8 text-white bg-[#FC7F66] rounded-xl flex flex-row space-x-2 hover:bg-white hover:text-[#FC7F66] border hover:border-[#FC7F66] transition-all duration-200">
               <BsCart className="text-xl" /> <span>Shop Now</span>
