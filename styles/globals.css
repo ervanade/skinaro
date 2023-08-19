@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
 @font-face {
   font-family: Luxyna;
   src: url(./font/LUXYNA.ttf);
 }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +19,8 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   color: rgb(var(--foreground-rgb));
-  background-color: white;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 244, 240, 1) 49%, rgba(255, 249, 247, 1) 100%);
   color: white;
   overflow-x: hidden;
   padding: 0;

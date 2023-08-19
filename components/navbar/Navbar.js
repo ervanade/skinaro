@@ -58,7 +58,7 @@ const Navbar = () => {
 
         </div>
         <div className={`right-navbar z-50 space-y-4 flex flex-col fixed top-0 ${menuButton ? 'right-0' : '-right-[350px]'} lg:hidden w-[350px] py-16 px-14 bg-[#9faca0] text-white h-full duration-200 transition-all ease-in`}>
-          <button className='absolute top-5 right-6' onClick={buttonOnChangeClose}><GiHamburgerMenu className='text-3xl text-gray-700 hover:text-white ' /></button>
+          <button className='absolute top-5 right-6' onClick={buttonOnChangeClose}><GiHamburgerMenu className='text-3xl text-gray-200 hover:text-white ' /></button>
           {navbarMenu.map(item => {
             return (
               <a key={item.id} href={item.link} className={`text-xl text-gray-200 hover:text-white font-medium `}>
@@ -68,6 +68,7 @@ const Navbar = () => {
           })}
         </div>
       </div>
+      <div className={`overlay w-screen h-screen absolute top-0 left-0 bg-black bg-opacity-20 z-[2] transition-all duration-300 ${menuButton ? "block" : "hidden"} `} onClick={() => setMenuButton(false)}></div>
     </div>
   )
 }

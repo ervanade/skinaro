@@ -29,21 +29,21 @@ const Hero = () => {
 
 
   return (
-    <div className="hero relative w-screen h-auto overflow-hidden pt-16 md:pt-8 lg:pt-2" id="hero">
+    <div className="hero relative w-screen h-auto overflow-hidden pt-16 md:pt-8 lg:pt-0" id="hero">
       {/* <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-20 z-[2]"></div> */}
       <div className="mx-auto w-full h-full ">
-      <Slider {...settings}>
-        <div>
-          <img src="assets/hero/hero-bg-4.png" alt="Slide 1" className="w-full" />
-        </div>
-        <div>
-          <img src="assets/hero/hero-bg-4.png" alt="Slide 2" className="w-full" />
-        </div>
-        {/* <div>
+        <Slider {...settings}>
+          <div>
+            <img src="assets/hero/hero-bg-4.png" alt="Slide 1" className="w-full" />
+          </div>
+          <div>
+            <img src="assets/hero/hero-bg-4.png" alt="Slide 2" className="w-full" />
+          </div>
+          {/* <div>
           <img src="assets/hero/hero-bg-mobile-1.png" alt="Slide 3" className="w-full" />
         </div> */}
-      </Slider>
-    </div>
+        </Slider>
+      </div>
       {/* <div className="mx-auto w-full h-full md:hidden">
       <Slider {...settings}>
         <div>

@@ -13,9 +13,9 @@ import Product from "../components/product/Product";
 import Benefit from "../components/benefit/Benefit";
 
 export default function Home() {
-useEffect(() => {
-  window.scrollTo(0, 0)
-}, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <Head>
@@ -36,8 +36,8 @@ useEffect(() => {
 
 
       {/* Section Benefit */}
-      <div className="points-skinaro w-full flex flex-wrap justify-center items-center py-8 lg:my-16 container mx-auto max-w-7xl gap-12 bg-cover bg-no-repeat" style={{ backgroundImage: `url(assets/about/about-bg.png)` }}>
-      
+      <div className="points-skinaro w-full flex flex-wrap justify-center items-center py-8 lg:my-16 container mx-auto max-w-7xl gap-12 bg-cover bg-no-repeat">
+
         <img src="assets/Icon/Icon-1.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px] " />
         <img src="assets/Icon/Icon-2.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
         <img src="assets/Icon/Icon-4.png" alt="" className="w-2/6 sm:w-auto sm:max-w-[150px]" />
