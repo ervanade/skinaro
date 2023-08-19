@@ -195,7 +195,7 @@ const Product = () => {
     <div
       className="product w-full md:my-16 flex flex-col justify-center items-center py-8 md:py-24 bg-cover bg-no-repeat relative"
       id="product"
-      style={{ backgroundImage: `url(assets/about/about-bg.png)` }}
+    // style={{ backgroundImage: `url(assets/about/about-bg.png)` }}
     >
       <Image
         src={"/assets/product/leaf-orange-prod.png"}
@@ -244,9 +244,8 @@ const Product = () => {
                 <div
                   key={index}
                   onClick={() => setSlider(index)}
-                  className={`img-box transition-all duration-200 h-16 w-16 border flex justify-center items-center cursor-pointer p-3 border-gray-300 rounded ${
-                    slider === index ? "" : "opacity-60"
-                  }`}
+                  className={`img-box transition-all duration-200 h-16 w-16 border flex justify-center items-center cursor-pointer p-3 border-gray-300 rounded ${slider === index ? "" : "opacity-60"
+                    }`}
                 >
                   <img
                     src={item.image}
@@ -262,9 +261,8 @@ const Product = () => {
               return (
                 <div
                   key={item.id}
-                  className={`h-2 rounded-lg cursor-pointer transition-all duration-200 ${
-                    slider === index ? "bg-[#D9D9D9] w-20" : "bg-[#FC7F66] w-12"
-                  }`}
+                  className={`h-2 rounded-lg cursor-pointer transition-all duration-200 ${slider === index ? "bg-[#D9D9D9] w-20" : "bg-[#FC7F66] w-12"
+                    }`}
                   onClick={() => setSlider(index)}
                 ></div>
               );
@@ -394,17 +392,17 @@ const Product = () => {
           <div className="flex self-start flex-wrap">
 
             {
-            productData[slider].benefit.map((item, index) => (
-              <div key={index} className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
-            >
-              <img
-                src={item.img}
-                alt={item.desc}
-                className="md:w-full h-full md:h-auto object-cover px-3"
-              />
-              <p className="text-[10px] text-center">{item.desc}</p>
-            </div>
-            ))
+              productData[slider].benefit.map((item, index) => (
+                <div key={index} className={`img-box transition-all duration-200 h-24 w-28 flex flex-col gap-1 justify-center items-center cursor-pointer p-3`}
+                >
+                  <img
+                    src={item.img}
+                    alt={item.desc}
+                    className="md:w-full h-full md:h-auto object-cover px-3"
+                  />
+                  <p className="text-[10px] text-center">{item.desc}</p>
+                </div>
+              ))
             }
 
           </div>

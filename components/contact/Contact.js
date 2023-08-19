@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className="contact  py-10 w-full relative lg:px-8 xl:px-24 bg-cover bg-no-repeat" id='contact' style={{ backgroundImage: `url(assets/about/about-bg.png)` }}>
+    <div className="contact  py-10 w-full relative lg:px-8 xl:px-24 bg-cover bg-no-repeat" id='contact' >
       {/* <img src="/fa-solid_leaf.png" className="lg:w-[173px] w-[100px] absolute top-0 right-4 md:block" alt="" /> */}
       <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 bg-[#5F8171] py-10 rounded-3xl">
         <h1 className="text-center font-luxyna tracking-[6px] text-2xl sm:text-4xl mb-6 md:mb-12 lg:mb-16">TALK WITH US</h1>

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Benefit = () => {
   return (
-    <div className="arotea w-full md:mb-16 relative py-8 md:pb-24 bg-cover bg-no-repeat" style={{ backgroundImage: `url(assets/about/about-bg.png)` }}>
+    <div className="arotea w-full md:mb-16 relative py-8 md:pb-24 bg-cover bg-no-repeat" >
 
       <Image src={"/assets/leaf-orange-2.png"} width={139} height={122} className='absolute bottom-0 right-5 md:block hidden' />
       <Image src={"/assets/vector.png"} width={24} height={24} className='absolute bottom-3 right-48 md:block hidden' />
