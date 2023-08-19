@@ -3,7 +3,7 @@ import Head from "next/head";
 import Script from 'next/script';
 import { useEffect, useState } from "react";
 function MyApp({ Component, pageProps }) {
-  const [apiScript, setApiScript] = useState('');
+  // const [apiScript, setApiScript] = useState('');
 
   // Ambil data script dari API (contoh: hardcoded untuk demonstrasi)
   // const apiScriptData = `<script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=DC-10827733&amp;l=dataLayer&amp;cx=c"></script>`;
@@ -15,8 +15,8 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         {/* Tambahkan data script dari API ke dalam tag <head> */}
-        <link rel="icon" href="/favicon-skinaro.png" />
-        <div dangerouslySetInnerHTML={{ __html: apiScript }} />
+        {/* <link rel="icon" href="/favicon-skinaro.png" />
+        <div dangerouslySetInnerHTML={{ __html: apiScript }} /> */}
         {/* <script
           dangerouslySetInnerHTML={{
             __html: `
