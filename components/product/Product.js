@@ -272,7 +272,7 @@ const Product = () => {
 
         <div className="text_container flex flex-col gap-4 justify-center items-center md:w-full transition-all duration-300 relative">
           <Image
-            src={"/assets/vector.png"}
+            src={"/assets/Vector.png"}
             width={24}
             height={24}
             className="absolute top-0 -left-12 md:block hidden"
