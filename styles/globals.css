@@ -2,8 +2,12 @@
 
 @font-face {
   font-family: Luxyna;
-  src: url(./font/LUXYNA.ttf);
+  src: url(/font/LUXYNA.ttf);
 }
+/* @font-face {
+  font-family: Luxyna;
+  src: url(./font/LUXYNA.ttf);
+} */
 
 @tailwind base;
 @tailwind components;
