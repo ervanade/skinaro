@@ -284,19 +284,19 @@ const Product = () => {
             <div className="tab-header flex gap-2">
               <button
                 onClick={() => setProductDesc("about")}
-                className={`${productDesc === "about" ? "bg-[#D9D9D9] text-black" : "bg-[#5F8171] text-white"} font-luxyna px-6 text-sm xs:text-base xs:px-8 py-2 shadow-sm transition-all duration-300 rounded-xl`}
+                className={`${productDesc === "about" ? "bg-[#D9D9D9] text-black" : "bg-[#5F8171] text-white"} font-luxyna px-6 text-sm xs:text-base xs:px-8 py-3 xs:py-2 shadow-sm transition-all duration-300 rounded-xl`}
               >
                 About
               </button>
               <button
                 onClick={() => setProductDesc("how")}
-                className={`${productDesc === "how" ? "bg-[#D9D9D9] text-black" : "bg-[#5F8171] text-white"}  font-luxyna px-6 text-sm xs:text-base xs:px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black`}
+                className={`${productDesc === "how" ? "bg-[#D9D9D9] text-black" : "bg-[#5F8171] text-white"}  font-luxyna px-6 text-sm xs:text-base xs:px-8 py-3 xs:py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black`}
               >
                 How To Use
               </button>
               <button
                 onClick={() => setProductDesc("ingridients")}
-                className={` ${productDesc === "ingridients" ? "bg-[#D9D9D9] text-black" : "bg-[#5F8171] text-white"} font-luxyna px-6 text-sm xs:text-base xs:px-8 py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black`}
+                className={` ${productDesc === "ingridients" ? "bg-[#D9D9D9] text-black" : "bg-[#5F8171] text-white"} font-luxyna px-6 text-sm xs:text-base xs:px-8 py-3 xs:py-2 shadow-sm transition-all duration-300 rounded-xl hover:bg-[#D9D9D9] hover:text-black`}
               >
                 Ingridients
               </button>
