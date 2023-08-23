@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="about bg-cover bg-no-repeat pt-16 pb-8 md:py-24 relative" id='why-aro' style={{ backgroundImage: `url(assets/about/about-bg.png)` }}>
       <Image src={"/assets/leaf-orange.png"} width={244} height={359} className='absolute top-0 right-0 w-24 h-32 lg:w-36 lg:h-48 xl:w-48 xl:h-64' />
-      <div className="relative container mx-auto max-w-7xl gap-10 px-6 md:px-10 lg:px-24 flex justify-center flex-col md:flex-row ">
+      <div className="relative container mx-auto max-w-7xl gap-6 md:gap-10 px-6 md:px-10 lg:px-24 flex justify-center flex-col md:flex-row ">
       <div className="left-about w-full object-cover relative">
       <h1 className="font-luxyna text-black absolute -top-7 left-16 text-5xl md:text-7xl">Why Aro?</h1>
         <img src="assets/about-img.png" alt="" className="w-full h-full object-cover px-6 md:px-0" />
