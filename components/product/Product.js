@@ -209,7 +209,7 @@ const Product = () => {
         height={50}
         className="absolute bottom-5 right-12 md:block hidden"
       />
-      <h1 className="font-luxyna text-black text-center mb-16 text-4xl md:text-7xl">
+      <h1 className="font-luxyna text-black text-center mb-6 md:mb-16 text-4xl md:text-7xl">
         Our Product
       </h1>
       <div className="container mx-auto max-w-7xl px-6 md:px-10 lg:px-24 text-black flex flex-col md:flex-row h-full justify-around gap-6 md:gap-0 group relative">
