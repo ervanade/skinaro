@@ -29,7 +29,7 @@ const Hero = () => {
 
 
   return (
-    <div className="hero relative w-screen h-auto overflow-hidden pt-16 md:pt-8 lg:pt-0" id="hero">
+    <div className="hero relative w-screen h-auto overflow-hidden pt-0 md:pt-0 lg:pt-0" id="hero">
       {/* <div className="overlay w-full h-full absolute top-0 left-0 bg-black bg-opacity-20 z-[2]"></div> */}
       <div className="mx-auto w-full h-full hidden md:block">
         <Slider {...settings}>
