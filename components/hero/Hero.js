@@ -52,6 +52,9 @@ const Hero = () => {
         <div>
           <img src="assets/hero/hero-banner-mobile.jpg" alt="Slide 3" className="w-full" />
         </div>
+        {/* <div>
+          <img src="assets/hero/hero-mobile-size2.png" alt="Slide 3" className="w-full" />
+        </div> */}
       </Slider>
     </div>
       {/* <img src="assets/hero/hero-bg-3.png" alt="" className="w-full hidden sm:block" />
