@@ -11,6 +11,7 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Product from "../components/product/Product";
 import Benefit from "../components/benefit/Benefit";
+import Modal from "../components/modal/Modal";
 
 export default function Home() {
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function Home() {
         <title>Skinaro - Beauty Aro Tea Skin Care</title>
       </Head>
       <Navbar />
+      <Modal />
 
       {/* Hero Seection */}
       <Hero />
