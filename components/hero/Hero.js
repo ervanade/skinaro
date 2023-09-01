@@ -47,7 +47,7 @@ const Hero = () => {
       <div className="mx-auto w-full h-full md:hidden">
       <Slider {...settings}>
         <div>
-          <img src="background-hero-mobile1.png" alt="Slide 3" className="w-full" />
+          <img src="assets/hero/background-hero-mobile1.png" alt="Slide 3" className="w-full" />
         </div>
         <div>
           <img src="assets/hero/hero-banner-mobile.jpg" alt="Slide 3" className="w-full" />
