@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="mx-auto w-full h-full hidden md:block">
         <Slider {...settings}>
           <div>
-            <img src="assets/hero/hero-bg-4.png" alt="Slide 1" className="w-full" />
+            <img src="assets/hero/background-hero-desktop-1.png" alt="Slide 1" className="w-full" />
           </div>
           <div>
             <img src="assets/hero/hero-banner-desktop.jpg" alt="Slide 2" className="w-full" />
@@ -47,7 +47,7 @@ const Hero = () => {
       <div className="mx-auto w-full h-full md:hidden">
       <Slider {...settings}>
         <div>
-          <img src="assets/hero/hero-mobile.png" alt="Slide 3" className="w-full" />
+          <img src="background-hero-mobile1.png" alt="Slide 3" className="w-full" />
         </div>
         <div>
           <img src="assets/hero/hero-banner-mobile.jpg" alt="Slide 3" className="w-full" />
