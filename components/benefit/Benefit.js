@@ -31,7 +31,7 @@ const Benefit = () => {
           </div>
           <div className="description flex flex-col gap-2 sm:gap-4">
 
-            <ul className='md:list-disc text-black font-light text-sm sm:text-base'>
+            <ul className='list-disc text-black font-light text-sm sm:text-base pl-5'>
               <li>Giving the body enough ammunition to fight infections and skin blemishes</li>
               <li>Helps delay aging and reduces puffiness</li>
               <li>Promote skin cell rejuvenation</li>
